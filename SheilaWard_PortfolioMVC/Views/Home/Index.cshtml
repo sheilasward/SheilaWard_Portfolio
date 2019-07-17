@@ -1,0 +1,1826 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="~/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="~/css/royal_preloader.css" type="text/css" rel="stylesheet">
+    <link href="~/css/animate.css" type="text/css" rel="stylesheet">
+    <link href="~/css/prettify.css" type="text/css" rel="stylesheet">
+    <link href="~/css/rev-slider-settings.css" type="text/css" rel="stylesheet">
+    <!-- MEGAFOLIO GALLERY  CSS -->
+    <link href="~/css/megafolio-style.css" type="text/css" rel="stylesheet">
+    <link href="~/css/megafolio-settings.css" type="text/css" rel="stylesheet">
+    <!-- Magnific Popup core CSS file -->
+    <link href="~/css/magnific-popup.css" type="text/css" rel="stylesheet">
+    <!-- Owl Carousel Assets -->
+    <link href="~/css/owl.carousel.css" type="text/css" rel="stylesheet">
+    <link href="~/css/owl.theme.css" type="text/css" rel="stylesheet">
+    <link href="~/css/owl.transitions.css" type="text/css" rel="stylesheet">
+    <link href="~/css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="~/css/superfish.css" type="text/css" rel="stylesheet">
+    <link href="~/css/style.css" type="text/css" rel="stylesheet">
+    <link href="~/css/style-responsive.css" type="text/css" rel="stylesheet">
+    <link href="~/css/apps-reset.css" type="text/css" rel="stylesheet">
+    <link href="~/css/default-theme.css" type="text/css" rel="stylesheet">
+
+    <link href="~/Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
+    <link href="~/Scripts/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        button.close {
+            color: white;
+            opacity: 0.8;
+        }
+
+        .btn-danger,
+        .btn-danger:focus {
+            background-color: #FA6862;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: #ED5550;
+        }
+
+        .btn-info,
+        .btn-info:focus {
+            background-color: #52BBD8;
+            color: white;
+        }
+
+        .btn-info:hover {
+            background-color: #31B0D5;
+            color: white;
+        }
+
+        .text-info {
+            color: #31B0D5;
+        }
+
+        .btn-warning,
+        .btn-warning:focus {
+            background-color: #EDA642;
+            color: white;
+        }
+
+        .btn-warning:hover {
+            background-color: #EC971F;
+            color: white;
+        }
+
+        .text-warning {
+            color: #EC971F;
+        }
+
+        .btn-primary,
+        .btn-primary:focus {
+            background-color: #337CB7;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #286090;
+            color: white;
+        }
+
+        .text-primary {
+            color: #286090;
+        }
+
+        .btn-success,
+        .btn-success:focus {
+            background-color: #58C958;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #449D44;
+            color: white;
+        }
+
+        .text-success {
+            color: #449D44;
+        }
+
+        .desc {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+         hr {
+            height: 5px;
+            background-color: blanchedalmond;
+            border: 2px solid gray;
+        }
+
+        .nbrInput {
+            width: 160px;
+        }
+
+        .newModal {
+            width: 180px;
+            height: 80px;
+            font-weight: bold;
+        }
+
+
+        .mathModalHdr {
+            background-color: #31B0D5;
+            color: white;
+        }
+
+        .factModalHdr {
+            background-color: #EC971F;
+            color: white;
+        }
+
+        .fbModalHdr {
+            background-color: #286090;
+            color: white;
+        }
+
+        .palModalHdr {
+            background-color: #449D44;
+            color: white;
+        }
+
+        .allModalHdr {
+            background-color: #FA6862;
+            color: white;
+        }
+
+        span.fizz-buzz {
+            color: purple;
+            font-size: x-large;
+        }
+
+        span.fizz {
+            color: blue;
+            font-size: larger;
+        }
+
+        span.buzz {
+            color: red;
+            font-size: larger;
+        }
+
+        span.iNumber {
+            color: black;
+            font-weight: bold;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+    </style>
+</head>
+<body class="royal_loader">
+    <div class="tp-banner-container" id="slides">
+        <div class="tp-banner">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+                    <!-- MAIN IMAGE -->
+                    <img src="~/img/banner1.png" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <div class="tp-caption lft" data-x="center" data-hoffset="0" data-y="50" data-voffset="0" data-speed="800" data-start="700" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        <img src="~/img/myResume.png" alt="slidebg1">
+                    </div>
+                    <div class="tp-caption main-title lfl" data-x="center" data-hoffset="0" data-y="250" data-speed="500" data-start="1500" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        Sheila Ward
+                    </div>
+                    <div class="tp-caption info-title lfr" data-x="center" data-hoffset="0" data-y="300" data-voffset="0" data-speed="500" data-start="2000" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        <p class="text-center">I love coding!</p>
+                    </div>
+                    <div class="tp-caption info-title lfl" data-x="center" data-hoffset="0" data-y="350" data-speed="500" data-start="2500" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        <p class="text-center">I write clean and efficient code to create robust full-stack web applications.</p>
+                    </div>
+                </li>
+                <!-- SLIDE  -->
+                <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+                    <!-- MAIN IMAGE -->
+                    <img src="~/img/banner2.png" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <div class="tp-caption lft" data-x="center" data-hoffset="0" data-y="0" data-voffset="0" data-speed="800" data-start="700" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        <img src="~/img/mouse-clipart.png" alt="slideimg">
+                    </div>
+                    <div class="tp-caption main-title lfl" data-x="center" data-hoffset="0" data-y="250" data-speed="500" data-start="1500" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        2 years experience
+                    </div>
+                    <div class="tp-caption info-title lfr" data-x="center" data-hoffset="0" data-y="300" data-voffset="0" data-speed="500" data-start="2000" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        In Full-Stack Web Development
+                    </div>
+                    <div class="tp-caption info-title lfl" data-x="center" data-hoffset="0" data-y="350" data-speed="500" data-start="2500" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        ASP.NET Stack / MERN Stack
+                    </div>
+                </li>
+                <!-- SLIDE  -->
+                <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+                    <!-- MAIN IMAGE -->
+                    <img src="~/img/banner3c.png" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <div class="tp-caption lft" data-x="center" data-hoffset="0" data-y="50" data-voffset="0" data-speed="800" data-start="700" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        <img src="~/img/myExperience.png" alt="slideimg">
+                    </div>
+                    <div class="tp-caption main-title lfl" data-x="center" data-hoffset="0" data-y="250" data-speed="500" data-start="1500" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        Additional Qualifications
+                    </div>
+                    <div class="tp-caption info-title lfr" data-x="center" data-hoffset="0" data-y="300" data-voffset="0" data-speed="500" data-start="2000" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        Mainframe Programmer for 20 years
+                    </div>
+                    <div class="tp-caption info-title lfl" data-x="center" data-hoffset="0" data-y="350" data-speed="500" data-start="2500" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        <p class="text-center">Experience with project management, testing, deployment, and training</p>
+                    </div>
+                    <div class="tp-caption info-title lfr" data-x="center" data-hoffset="0" data-y="400" data-voffset="0" data-speed="500" data-start="3000" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
+                        Business experience with administration, accounting, and insurance
+                    </div>
+                </li>
+            </ul>
+            <div class="tp-bannertimer">
+            </div>
+        </div>
+    </div>
+    <div class="top-scroll-bar">
+        <a href="#about-me" class="scroll-down wow pulse" data-wow-iteration="infinite"><i class="fa fa-angle-double-down wow pulse" data-wow-iteration="infinite"></i></a>
+    </div>
+    <!--home section end -->
+    <div class="navigation clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar navbar-static-top">
+                        <div>
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="fa fa-bars"></span>
+                                </button>
+                                <a class="sticky-logo" href="index.html">
+                                    <img src="~/img/sticky-logo.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="navbar-collapse collapse ddsmoothmenu" id="smoothmenu1">
+                                <ul class="nav navbar-nav pull-right top-nav sf-menu">
+                                    <li><a href="#slides">Home</a></li>
+                                    <li><a href="#about-me">About Me</a></li>
+                                    <li><a href="#skill-section">Skill</a></li>
+                                    <li><a href="#experiences">Experiences</a></li>
+                                    <li><a href="#education">Education</a></li>
+                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#testimonial">References</a></li>
+                                    <li><a href="#connect">Connect</a></li>
+                                    @*<li>
+                                            <a href="#blog">Blog</a>
+                                            <ul>
+                                                <li><a href="#blog">Blog List</a></li>
+                                                <li><a href="blog_listing.html" class="external">Blog Page</a></li>
+                                                <li><a href="blog_details.html" class="external">Blog Details Page</a></li>
+                                            </ul>
+                                        </li>*@
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about me section start -->
+    <section>
+        <div class="section-about" id="about-me">
+            <div class="details">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="about-img wow fadeInUpBig">
+                                <img src="~/img/p1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="content">
+                                <h1 class="section-heading " data-wow-duration="1s" data-wow-delay="0s">ABOUT ME</h1>
+                                <h2 class="section-subheading about" data-wow-duration="1s" data-wow-delay=".2s">SHEILA WARD - <span>Creative Web Developer</span></h2>
+                                <div class="text about" data-wow-duration="1s" data-wow-delay=".4s">
+                                    <p>I have been an Application Developer for over 20 years in the Insurance industry, and I love coding!</p>
+                                    <p>I enjoy using logic to solve problems on the back end, and creativity to design User Interfaces on the front end!</p>
+                                    <p>
+                                        During my employment at Jefferson-Pilot / Lincoln Financial, I worked with a variety of languages and platforms until
+                                        my job was eliminated from outsourcing.  Most of my work included mainframe programming in COBOL, DB2, Easytrieve Plus,
+                                        SAS, and of course, JCL.  While there, I taught myself HTML, CSS, and Javascript.  I also spent several years learning
+                                        and writing Crystal Reports, and ways to join databases to produce reports for Management.  During the last few years,
+                                        I wrote JavaScript to gather information from the LifeComm Admin System to feed Lincoln's Customer Service Accelerator
+                                        system.
+                                    </p>
+
+                                </div>
+                                <div class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0s">
+                                    <p style="font-family: 'Dancing Script', cursive; padding: 40px; color: #F96963; font-size: 32px;">Sheila Ward</p>
+
+                                </div>
+                                <div class="custombtn wow bounceIn" data-wow-duration="1s" data-wow-delay=".2s">
+                                    <div class="icons">
+                                        <a href="~/img/web-developer-resume.pdf" download="sheila-ward-resume.pdf"><i class="fa fa-download"></i></a>
+                                    </div>
+                                    <div class="text">
+                                        Download Resume
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <!-- about me section end-->
+    <!--skill section start -->
+    <section>
+        <div class="section-skill appear" id="skill-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1 class="section-heading" data-scrollreveal="enter left">SKILL</h1>
+                            <h2 class="section-subheading-nobg" data-scrollreveal="enter left">I am Really Good At the Following Technical Skills</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="skill wow fadeInLeftBig">
+                            <div class="name">
+                                <div class="arrow">
+                                </div>
+                                <div class="label">
+                                    Front-End
+                                </div>
+                            </div>
+                            <div style="float:left; width:150px; margin-top:40px; margin-left:30px; font-weight:600; font-size:16px; color:#F96963;">
+                                HTML/CSS <br />
+                                JavaScript/jQuery <br />
+                                Bootstrap 3 & 4 <br />
+                                Handlebars <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="skill">
+                            <div class="name">
+                                <div class="arrow">
+                                </div>
+                                <div class="label">
+                                    ASP.NET Stack
+                                </div>
+                            </div>
+                            <div style="float:left; width:150px; margin-top:40px; margin-left:30px; font-weight:600; font-size:16px; color:#F96963;">
+                                ASP.NET MVC <br />
+                                C# <br />
+                                Razor <br />
+                                SQL Server
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="skill wow fadeInRightBig">
+                            <div class="name">
+                                <div class="arrow">
+                                </div>
+                                <div class="label">
+                                    MERN Stack
+                                </div>
+                            </div>
+                            <div style="float:left; width:150px; margin-top:40px; margin-left:30px; font-weight:600; font-size:16px; color:#F96963;">
+                                MongoDB <br />
+                                Express <br />
+                                React <br />
+                                Node.js
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="skillnews">
+                            <h2>Other Technologies I've Used in the Past</h2>
+                            <h3>JCL, COBOL, Easytrieve, SAS, Crystal Reports, DB2, HB.js</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--skill section end -->
+    <!--experience section start -->
+    <section>
+        <div class="section-experience" id="experiences">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1 class="section-heading">EXPERIENCE</h1>
+                            <h2 class="section-subheading-nobg">Timeline of my Educational and Professional Experiences</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-timeline">
+                    <div class="row first">
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-divider wow bounceIn">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="timeline-marker left fr wow slideInLeft">
+                                <div class="timeline-date">
+                                    JUN 2019 - TILL TODAY
+                                </div>
+                                <div class="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-details right wow slideInRight">
+                                <div class="skill">
+                                    <h2 class="skill-heading">CODER FOUNDRY</h2>
+                                    <h3 class="skill-subheading">Student in 6-month program</h3>
+                                    <p>Currently learning the ASP.NET stack at Coder Foundry.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-divider wow bounceIn">
+                                <i class="fa fa-times"></i>
+                            </div>
+                            <div class="timeline-details left wow slideInLeft">
+                                <div class="skill">
+                                    <h2 class="skill-heading tar">UDEMY</h2>
+                                    <h3 class="skill-subheading tar">The Web Developer Bootcamp</h3>
+                                    <p class="tar">
+                                        While job hunting, I sharpened my MERN skills by taking Colt Steele's Web Developer Bootcamp on Udemy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-marker right fl wow slideInRight">
+                                <div class="timeline-date">
+                                    JAN 2019 - JUN 2019
+                                </div>
+                                <div class="arrow-left">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-divider wow bounceIn">
+                                <i class="fa fa-times"></i>
+                            </div>
+                            <div class="timeline-marker left fr wow slideInLeft">
+                                <div class="timeline-date">
+                                    MAY 2018 - NOV 2018
+                                </div>
+                                <div class="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-details right wow slideInRight">
+                                <div class="skill">
+                                    <h2 class="skill-heading">The Coding Bootcamp at UNC-Chapel Hill</h2>
+                                    <h3 class="skill-subheading">Student in 6-month program</h3>
+                                    <p>
+                                        Learned the MERN stack at The Coding Bootcamp at UNC-Chapel Hill.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-divider wow bounceIn">
+                                <i class="fa fa-times"></i>
+                            </div>
+                            <div class="timeline-details left wow slideInLeft">
+                                <div class="skill">
+                                    <h2 class="skill-heading tar">Guilford Technical Community College</h2>
+                                    <h3 class="skill-subheading tar">Student taking Web Courses</h3>
+                                    <p class="tar">
+                                        Studied Java, Advanced Java, and Android Development.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-marker right fl wow slideInRight">
+                                <div class="timeline-date">
+                                    AUG 2017 - MAY 2018
+                                </div>
+                                <div class="arrow-left">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-divider wow bounceIn">
+                                <i class="fa fa-times"></i>
+                            </div>
+                            <div class="timeline-marker left fr wow slideInLeft">
+                                <div class="timeline-date">
+                                    AUG 1996 - MAY 2017
+                                </div>
+                                <div class="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-details right wow slideInRight">
+                                <div class="skill">
+                                    <h2 class="skill-heading">Lincoln Financial Group</h2>
+                                    <h3 class="skill-subheading">Application Developer</h3>
+                                    <p>
+                                        Application Developer on 5 different teams:  Home Service, Management Information Services Reports, Miscellaneous Admin Systems, LifeComm Admin, and Vantage Admin.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-divider wow bounceIn">
+                                <i class="fa fa-times"></i>
+                            </div>
+                            <div class="timeline-details left wow slideInLeft">
+                                <div class="skill">
+                                    <h2 class="skill-heading tar">West Christian Academy</h2>
+                                    <h3 class="skill-subheading tar">Math and Bible Teacher</h3>
+                                    <p class="tar">
+                                        Taught Mathematics and Bible to 6th - 11th grade students
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 mobile-view">
+                            <div class="timeline-marker right fl wow slideInRight">
+                                <div class="timeline-date">
+                                    AUG 1993 - MAY 1996
+                                </div>
+                                <div class="arrow-left">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <!--experience section end -->
+    <!--section education start-->
+    <section>
+        <div class="section-education" id="education">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1 class="section-heading">EDUCATION</h1>
+                            <h2 class="section-subheading-nobg">Institutions of Higher Learning</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <div class="details wow slideInLeft">
+                        <div class="content ">
+                            <h2 class="section-subtitle">Continuing Education</h2>
+                            <p>
+                                Guilford Technical Community College
+                            </p>
+                        </div>
+                    </div>
+                    <div class="year">
+                        <div class="reddot left-dot wow bounceIn">
+                        </div>
+                        <div>
+                            <h2 class="section-subtitle">MAY / 2019</h2>
+                        </div>
+                        <div class="reddot right-dot wow bounceIn">
+                        </div>
+                    </div>
+                    <div class="details higherz wow slideInRight">
+                        <div class="content">
+                            <h2 class="section-subtitle">Grade: 3.93</h2>
+                            <p>
+                                From 2012 to 2019 I have taken Web Development courses at GTCC
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="education">
+                            <div class="details wow slideInLeft">
+                                <div class="content ">
+                                    <h2 class="section-subtitle">Master's Degree in Christian Education</h2>
+                                    <p>
+                                        Jacksonville Theological Seminary
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="year">
+                                <div class="reddot left-dot wow bounceIn">
+                                </div>
+                                <div>
+                                    <h2 class="section-subtitle">MAY / 1995</h2>
+                                </div>
+                                <div class="reddot right-dot wow bounceIn">
+                                </div>
+                            </div>
+                            <div class="details higherz wow slideInRight">
+                                <div class="content">
+                                    <h2 class="section-subtitle">Grade: A</h2>
+                                    <p>
+                                        While working at our church's Private Christian school, I earned a Master's in Christian Education.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education">
+                            <div class="details wow slideInLeft">
+                                <div class="content ">
+                                    <h2 class="section-subtitle">Bachelor Degree</h2>
+                                    <p>
+                                        University of North Carolina at Greensboro
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="year">
+                                <div class="reddot left-dot wow bounceIn">
+                                </div>
+                                <div>
+                                    <h2 class="section-subtitle">MAY / 1983</h2>
+                                </div>
+                                <div class="reddot right-dot wow bounceIn">
+                                </div>
+                            </div>
+                            <div class="details higherz wow slideInRight">
+                                <div class="content">
+                                    <h2 class="section-subtitle">Grade: 3.78</h2>
+                                    <p>
+                                        I majored in Mathematics with an emphasis on Computer Science
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section education end-->
+    <!--section portfolio start-->
+    <section>
+        <div class="section-portfolio" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1 class="section-heading">PORTFOLIO</h1>
+                            <h2 class="section-subheading-nobg">My Work</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <section>
+                            <!-- THE FILTER STYLED FOR MEGAFOLIO -->
+                            <div class="tags filter-nav">
+                                <ul>
+                                    <li class="filter selected" data-category="cat-all">ALL</li>
+                                    <li class="filter" data-category="cat-uiux">UI/UX</li>
+                                    <li class="filter" data-category="cat-two">NODE.JS</li>
+                                    <li class="filter" data-category="cat-two">ASP.NET</li>
+                                    <li class="filter" data-category="cat-three">DATABASE</li>
+                                    <li class="filter" data-category="cat-three">HANDLEBARS</li>
+                                    <li class="filter last-child" data-category="cat-four">REACT</li>
+                                </ul>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <!-- The GRID System -->
+                            <div class="megafolio-container light-bg-entries">
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-uiux cat-all" data-src="../img/portfolio/JSBasics.jpg" data-width="577" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Javascript Basics
+                                            <div class="mega-hoversubtitle">
+                                                UX/UI
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="#portfolioModal">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-one cat-all" data-src="../img/portfolio/image2.jpg" data-width="667" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-three cat-all" data-src="../img/portfolio/image3.jpg" data-width="625" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-four cat-all" data-src="../img/portfolio/image4.jpg" data-width="500" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-one cat-all" data-src="../img/portfolio/image5.jpg" data-width="551" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-two cat-all" data-src="../img/portfolio/image6.jpg" data-width="594" data-height="50">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-three cat-all" data-src="../img/portfolio/image7.jpg" data-width="512" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-four cat-all" data-src="../img/portfolio/image8.jpg" data-width="612" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-two cat-all" data-src="../img/portfolio/image9.jpg" data-width="615" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mega-entry cat-three cat-all" data-src="../img/portfolio/image1.jpg" data-width="577" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-four cat-all" data-src="../img/portfolio/image2.jpg" data-width="667" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-one cat-all" data-src="../img/portfolio/image3.jpg" data-width="625" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Portfolio Title
+                                            <div class="mega-hoversubtitle">
+                                                Category
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section portfolio end-->
+    <!--section testimonial start-->
+    <section>
+        <div class="section-testimonial" id="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1 class="section-heading">REFERENCES</h1>
+                            <h2 class="section-subheading-nobg">My Former Managers, Co-workers, and Instructors Speak Out</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="testimonial-carousel">
+                            <div>
+                                <div class="testimonial-thumb">
+                                    <div class="img-frame wow bounceInDown">
+                                        <img src="~/img/quote_photoframe.png" alt="" />
+                                        <img class="icon" src="~/img/quote_circle.png" alt="" />
+                                        <img class="person" src="~/img/DaveRose.jpg" alt="" />
+                                    </div>
+                                    <div class="details">
+                                        <h2>Dave Rose</h2>
+                                        <h3>RETIRED AVP - LINCOLN FINANCIAL GROUP</h3>
+                                    </div>
+                                </div>
+                                <div class="quote">
+                                    <p>
+                                        Sheila is a predictable, strong contributor on both individual projects and and as a member of a team
+                                        on cross-department initiatives. She works best when she has multiple assignments and utilizes
+                                        excellent task and time management. Sheila was the company Subject Matter Expert for a quarterly
+                                        NCOA address cleansing system. She was my go-to developer for novel technologies, and was
+                                        tenacious and resourceful in navigating our large organization to find assistance.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="testimonial-thumb">
+                                    <div class="img-frame wow bounceInDown">
+                                        <img src="~/img/quote_photoframe.png" alt="" />
+                                        <img class="icon" src="~/img/quote_circle.png" alt="" />
+                                        <img class="person" src="~/img/RebeccaHalsey.jpg" alt="" />
+                                    </div>
+                                    <div class="details">
+                                        <h2>Rebecca Halsey</h2>
+                                        <h3>INSTRUCTOR, COMPUTER TECHNOLOGIES AT GUILFORD TECHNICAL COMMUNITY COLLEGE</h3>
+                                    </div>
+                                </div>
+                                <div class="quote">
+                                    <p>
+                                        Sheila is a top 5% student, excelling in Java and Android Development.  She is a team player and has helped mentor
+                                        other students during her time at GTCC.  She is always prompt with her work and communicates and goes above and
+                                        beyond to ensure her work is done correctly .
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="testimonial-thumb">
+                                    <div class="img-frame wow bounceInDown">
+                                        <img src="~/img/quote_photoframe.png" alt="" />
+                                        <img class="icon" src="~/img/quote_circle.png" alt="" />
+                                        <img class="person" src="~/img/Cindy.jpg" alt="" />
+                                    </div>
+                                    <div class="details">
+                                        <h2>Cynthia Triplett</h2>
+                                        <h3>RETIRED LEAD APPLICATION DEVELOPER - LINCOLN FINANCIAL GROUP</h3>
+                                    </div>
+                                </div>
+                                <div class="quote">
+                                    <p>
+                                        Sheila is a pleasure to work with, a team player, and readily assists colleagues as needed.   She is organized, 
+                                        successful in finding creative solutions to problems, her results are thoroughly tested, and quality deliverables 
+                                        are completed on schedule.  Sheila worked with several development teams during her tenure with Lincoln Financial, 
+                                        and continued to learn new technology and develop IT skill sets to support the areas.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="testimonial-thumb">
+                                    <div class="img-frame wow bounceInDown">
+                                        <img src="~/img/quote_photoframe.png" alt="" />
+                                        <img class="icon" src="~/img/quote_circle.png" alt="" />
+                                        <img class="person" src="~/img/client3.jpg" alt="" />
+                                    </div>
+                                    <div class="details">
+                                        <h2>Adam Franklin</h2>
+                                        <h3>CEO - THEMEBUCKET</h3>
+                                    </div>
+                                </div>
+                                <div class="quote">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section testimonial end-->
+    <!--section connect start-->
+    <section>
+        <div id="connect" class="connect-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1 class="section-heading">connect</h1>
+                            <h2 class="section-subheading-nobg">DRAG & DROP THE ICONS INTO THE LAPTOP</h2>
+                        </div>
+                        <div class="draggable-monitor">
+                            <div class="drag-place">
+                            </div>
+                            <div class="drag-arrow">
+                            </div>
+                            @*<a href="https://www.facebook.com/" class="social-link social-link-drag sprite-facebook wow bounceIn "></a>*@
+                            <a href="https://www.linkedin.com/in/sheilastanalandward/" class="social-link social-link-drag sprite-linkedin wow bounceIn " data-wow-delay=".8s"></a>
+                            @*<a href="https://dribbble.com/" class="social-link social-link-drag sprite-dribbble wow bounceIn " data-wow-delay="1.2s"></a>*@
+                            @*<a href="https://www.flickr.com/" class="social-link social-link-drag sprite-flickr wow bounceIn " data-wow-delay="1.6s"></a>*@
+                            @*<a href="https://instagram.com/" class="social-link social-link-drag sprite-instagram wow bounceIn" data-wow-delay=".4s"></a>*@
+                            <a href="https://www.youtube.com/user/sheilastanaland" class="social-link social-link-drag sprite-youtube wow bounceIn"></a>
+                            <a href="https://twitter.com/SheilaStanaland" class="social-link social-link-drag sprite-twitter wow bounceIn" data-wow-delay=".8s"></a>
+                            @*<a href="https://www.pinterest.com/" class="social-link social-link-drag sprite-printerest wow bounceIn" data-wow-delay="1.2s"></a>*@
+                            <a href="https://github.com/sheilasward" class="social-link social-link-drag sprite-github wow bounceIn" data-wow-delay="1.6s"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--section contact start-->
+        <div class="section-contact">
+            <div class="map-header" id="contact">
+                <div class="container">
+                    <span class="map-link">
+                        <i class=" fa fa-map-marker"></i><span>Catch me in the google map</span>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-map">
+                <div id="map-canvas" class="location-map">
+                </div>
+                <div class="contact-form panel-hide wow bounceInUp">
+                    <div class="form-container">
+                        <h3>Drop me a line</h3>
+
+                        <form class="contact-comments" action="sendmail.php" method="post">
+
+                            <div class="row">
+
+                                <div class="col-md-12 form-group">
+                                    <!-- Name -->
+                                    <input type="text" name="name" id="name" class=" form-control" placeholder="Name *"
+                                           maxlength="100" required="">
+                                </div>
+
+                                <div class="col-md-12 form-group">
+                                    <!-- Email -->
+                                    <input type="email" name="email" id="email" class=" form-control" placeholder="Email *"
+                                           maxlength="100" required="">
+                                </div>
+
+                                <div class="col-md-12 form-group">
+                                    <!-- Subject -->
+                                    <input type="text" name="subject" id="subject" class=" form-control" placeholder="Subject "
+                                           maxlength="100">
+                                </div>
+
+                                <div class="col-md-12 form-group">
+                                    <!-- Comment -->
+                                    <textarea name="comments" id="comments" class=" form-control" placeholder="Comments"
+                                              maxlength="400"></textarea>
+                                </div>
+
+                                <div class="col-md-12 form-group text-center">
+                                    <button type="submit" class="btn btn-read ">
+                                        Send Message
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+                <div class="toggle-contact-form wow bounceInUp">
+                    <a href="#" class="form-toggle-icon">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--section contact end-->
+    </section>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="wow slideInLeft">
+                            <p>
+                                5703 Davis Mill Road <br />
+                                Greensboro, North Carolina 27406
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="wow slideInDown text-center">
+                            <p style="font-family: 'Dancing Script', cursive; padding: 10px; color: #F96963; font-size: 32px;">Sheila Ward</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="wow slideInRight">
+                            <div class="f-address">
+                                <p>
+                                    <span>Email</span> : sheila.ward@email.com
+                                </p>
+                                <p>
+                                    <span>Phone</span> : (336) 327-4914
+                                </p>
+                                <p class="inlineBlock">
+                                    <span>Websites</span> : <a href="https://sheilasward.github.io/updatedPortfolio/" target="_blank">MERN Portfolio</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        &copy; 2014 resumi. All Rights Reserved. Designed & powered by <a href="#">ThemeBucket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*Modals go here*@
+    <!-- Modal -->
+    <div id="portfolioModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content modal-lg">
+                <div class="modal-header allModalHdr">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">JAVASCRIPT BASIC EXERCISES</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-3 h4">
+                            <button class="btn btn-info btn-lg newModal" data-toggle="modal" href="#math">MATH</button>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="desc text-info">
+                                Enter 5 numbers, and find (1) Sum, (2) Product, and statistics: <br />(3) Mean, (4) Max, and (5) Min
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 h4">
+                            <button class="btn btn-warning btn-lg newModal" data-toggle="modal" href="#factorial">FACTORIAL</button>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="desc text-warning">
+                                Enter number n, and find n!  n * (n-1) * (n-2) * (n-3) ... * 1<br />For example, 5! = 5 * 4 * 3 * 2 * 1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 h4">
+                            <button class="btn btn-primary btn-lg newModal" data-toggle="modal" href="#fizzbuzz">FIZZBUZZ</button>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="desc text-primary">
+                                Enter two numbers a & b between 1 and 100.  Then print out all numbers 1-100, except (1) When evenly divisible by a,
+                                print "<span class="fizz">Fizz</span>" (2) When evenly divisible by b, print "<span class="buzz">Buzz</span>" (3) When evenly divisible by both a & b, print "<span class="fizz-buzz">FizzBuzz</span>"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 h4">
+                            <button class="btn btn-success btn-lg newModal" data-toggle="modal" href="#palindrome">PALINDROME</button>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="desc text-success">
+                                Enter a word or phrase.  When ignoring spaces and special characters, the word/phrase is a Palindrome if it is the
+                                same when reversed.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="math" class="modal fade" data-focus-on="input:first" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content modal-lg">
+                <div class="modal-header mathModalHdr">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">MATH MODAL</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-center h4">
+
+                            <h4>Enter 5 Numbers:</h4>
+                            <input id="nbr1" class="nbrInput formInput" type="number" name="nbr1" value="" />
+                            <input id="nbr2" class="nbrInput formInput" type="number" name="nbr2" value="" />
+                            <input id="nbr3" class="nbrInput formInput" type="number" name="nbr3" value="" />
+                            <input id="nbr4" class="nbrInput formInput" type="number" name="nbr4" value="" />
+                            <input id="nbr5" class="nbrInput formInput" type="number" name="nbr5" value="" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-info h4" id="btnMath">CALCULATE</button>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row text-center">
+                        <div class="col-md-1"></div>
+                        <div class="text-info h4 col-md-2">SUM</div>
+                        <div class="text-info h4 col-md-2">PRODUCT</div>
+                        <div class="text-info h4 col-md-2">MEAN</div>
+                        <div class="text-info h4 col-md-2">MAX</div>
+                        <div class="text-info h4 col-md-2">MIN</div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2"><p id="sumResult" class="h4 text-center formInput"></p></div>
+                        <div class="col-md-2"><p id="prodResult" class="h4 text-center formInput"></p></div>
+                        <div class="col-md-2"><p id="meanResult" class="h4 text-center formInput"></p></div>
+                        <div class="col-md-2"><p id="maxResult" class="h4 text-center formInput"></p></div>
+                        <div class="col-md-2"><p id="minResult" class="h4 text-center formInput"></p></div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-info h4" id="btnMathCode">SHOW CODE</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-left h6">
+                            <div id="syntaxMathResult" class="formInput">
+                                <pre class="brush: js">
+// Calculate Sum, Product, Mean, Min, and Max of 5 numbers
+$("#btnMath").click(function () {
+    // Create Array
+    var arr = [Number($("#nbr1").val()), Number($("#nbr2").val()), Number($("#nbr3").val()), 
+               Number($("#nbr4").val()), Number($("#nbr5").val())];
+
+    // Call Functions for Sum and Product
+    var arrSum = MathSum(arr);
+    var arrProd = MathProd(arr);
+
+    // Return Sum and Prod Results
+    $("#sumResult").text(arrSum);
+    $("#prodResult").text(arrProd);
+
+    // Calculate and Return Mean (Avg)
+    var arrMean = (arrSum / arr.length);
+    $("#meanResult").text(arrMean);
+
+    // Calculate and Return Min
+    var arrMin = Math.min(...arr);
+    $("#minResult").text(arrMin);
+
+    // Calculate and Return Max
+    var arrMax = Math.max(...arr);
+    $("#maxResult").text(arrMax);
+});
+
+function MathSum(array) {
+    var total = 0;
+    for (var i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    return total;
+}
+
+function MathProd(array) {
+    var product = 1;
+    for (var i = 0; i < array.length; i++) {
+        product *= array[i];
+    }
+    return product;
+}
+                                </pre>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info closeModal" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="factorial" class="modal fade" data-focus-on="input:first" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header factModalHdr">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">FACTORIAL MODAL</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-center h4">
+                            <p>Enter the Factorial Number:</p>
+                            <input id="factNum" type="number" name="nbr1" class="formInput" value="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-warning h4" id="btnFact">CALCULATE</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p id="factResult" class="h4 text-center formInput"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-warning h4" id="btnFactCode">SHOW CODE</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-left h6">
+                            <div id="syntaxFactResult" class="formInput">
+                                <pre class="brush: js">
+// Calculate Factorial
+$("#btnFact").click(function () {
+    // Step 1: Get the data
+    var factNum = Number($("#factNum").val());
+    // Step 2: Do Calculation
+    var result = Factorial(factNum);
+    // Step 3: Output the Result
+    $("#factResult").text(result);
+});
+
+function Factorial(nbr) {
+    // For Loop
+    for (var i = nbr - 1; i > 1; i--) {
+        nbr *= i;
+    }
+    return nbr;
+}
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning closeModal" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="fizzbuzz" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header fbModalHdr">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">FIZZ-BUZZ MODAL</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 text-center h4">
+                            <p>Enter the Fizz Number:</p>
+                            <input id="fizzNum" type="number" name="fizz" class="formInput" value="3" />
+                        </div>
+                        <div class="col-md-6 text-center h4">
+                            <p>Enter the Buzz Number:</p>
+                            <input id="buzzNum" type="number" name="buzz" class="formInput" value="5" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" id="btnFB" class="btn btn-primary h4">SHOW THE FIZZ-BUZZ</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p id="fbResult" class="h4 formInput"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-primary h4" id="btnFBCode">SHOW CODE</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-left h6">
+                            <div id="syntaxFBResult" class="formInput">
+                                <pre class="brush: js">
+// Fizz-Buzz
+$("#btnFB").click(function () {
+    // Get the data
+    var fizz = Number($("#fizzNum").val());
+    var buzz = Number($("#buzzNum").val());
+    // Call the "FizzBuzz" function and return in a string variable
+    var fbStr = FizzBuzz(fizz, buzz);
+    $("#fbResult").html(fbStr);
+});
+
+function FizzBuzz(nbr1, nbr2) {
+    var output = [];
+    for (var i = 1; i <= 100; i++) {
+        var fizz = (i % nbr1 == 0);  // returns a 'true' or 'false'
+        var buzz = (i % nbr2 == 0);
+        if (fizz && buzz) output.push("<span class='fizz-buzz'>FIZZ-BUZZ</span>");
+        else if (fizz) output.push("<span class='fizz'>FIZZ</span>");
+        else if (buzz) output.push("<span class='buzz'>BUZZ</span>");
+        else output.push("<span class='iNumber'>" + i + "</span>");
+    }
+    return output.join(", ");
+}
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary closeModal" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="palindrome" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header palModalHdr">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">PALINDROME MODAL</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 text-center h4">
+                            <p>Enter a Word:</p>
+                            <input id="word" type="text" name="word" class="formInput" value="" />
+                        </div>
+                        <div class="col-md-6 text-center h4">
+                            <br />
+                            <button type="button" id="btnPalindrome" class="btn btn-success">IS IT A PALINDROME?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center h4">
+                            <p id="palindromeResult" class="h4 formInput"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success closeModal" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--section contact end-->
+    <!-- jQuery v1.10.2  -->
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/royal_preloader.js"></script>
+    <script type="text/javascript">
+        var images = {
+            'Banner One': 'https://rxhtml.themebucket.net/img/banner1.jpg',
+            'Banner Two': 'https://rxhtml.themebucket.net/img/banner2.jpg',
+            'Banner Three': 'https://rxhtml.themebucket.net/img/banner3.jpg',
+            'Theme Bucket': 'https://rxhtml.themebucket.net/img/p1.jpg',
+            'About Me': 'https://rxhtml.themebucket.net/img/about-bg.jpg',
+            'Experience': 'https://rxhtml.themebucket.net/img/experience-bg.jpg',
+            'Connect Monitor': 'https://rxhtml.themebucket.net/img/connect-monitor.png'
+        };
+        // config
+        Royal_Preloader.config({
+            mode: 'number',
+            images: images,
+            timeout: 20,
+            showInfo: true,
+            background: ['#FA6862']
+        });</script>
+    <!-- Bootstrap v3.1.0-->
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <!-- jQuery REVOLUTION Slider -->
+    <script src="~/js/jquery.revslider.plugins.min.js"></script>
+    <script src="~/js/jquery.themepunch.revolution.js"></script>
+    <!-- Scroll Top-->
+    <script src="~/js/jquery.scrollUp.js"></script>
+    <!-- Easing Effect-->
+    <script src="~/js/jquery.easing.js"></script>
+    <!-- Knob-->
+    <script src="~/js/jquery.easypiechart.js"></script>
+    <!-- One Page Nav-->
+    <script src="~/js/jquery.nav.js"></script>
+    <!-- Scroll To-->
+    <script src="~/js/jquery.scrollTo.js"></script>
+    <!-- Sticky Nav-->
+    <script src="~/js/waypoints.js"></script>
+    <script src="~/js/waypoints-sticky.js"></script>
+    <!-- Elements Animation On Scroll -->
+    <script src="~/js/wow.js"></script>
+    <!-- jQuery Fittext -->
+    <script src="~/js/jquery.fittext.js"></script>
+    <!-- Appear Animation -->
+    <script src="~/js/jquery.appear.js"></script>
+    <!-- Masonry Grid -->
+    <script src="~/js/jquery.isotope.js"></script>
+    <!-- Smooth Scroll Effect -->
+    <script src="~/js/jquery.smooth-scroll.js"></script>
+    <!-- Google Map Api -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
+    <!-- MEGAFOLIO GALLERY  JS FILES  -->
+    <script src="~/js/jquery.megafolio.plugins.min.js"></script>
+    <script src="~/js/jquery.themepunch.megafoliopro.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="~/js/jquery.magnific-popup.js"></script>
+    <!-- jQuery OwlCarousel -->
+    <script src="~/js/owl.carousel.js"></script>
+    <!-- Drop Down Menu -->
+    <script src="~/js/hoverIntent.js"></script>
+    <script src="~/js/superfish.js"></script>
+    <!-- Syntax Highlighter -->
+    <script src="~/js/prettify.js"></script>
+    <!-- Flickr Feed -->
+    <script src="~/js/jflickrfeed.js"></script>
+    <!-- Plugins Initialize Scripts -->
+    <script src="~/js/scripts.js"></script>
+    <!-- Include required JS files -->
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+
+    <script>
+        $(function () {
+            // at section scripts tells the Layout page to strip the scripts out of here and put them in RenderSection("scripts", required: false)
+            // Set Global variable
+            var ALLMODAL = false;
+
+            $("#syntaxMathResult").hide();
+            $("#syntaxFactResult").hide();
+            $("#syntaxFBResult").hide();
+
+            // Calculate Sum, Product, Mean, Min, and Max of 5 numbers
+            $("#btnMath").click(function () {
+                // Create Array
+                var arr = [Number($("#nbr1").val()), Number($("#nbr2").val()), Number($("#nbr3").val()), Number($("#nbr4").val()), Number($("#nbr5").val())];
+
+                // Call Functions for Sum and Product
+                var arrSum = MathSum(arr);
+                var arrProd = MathProd(arr);
+
+                // Return Sum and Prod Results
+                $("#sumResult").text(arrSum);
+                $("#prodResult").text(arrProd);
+
+                // Calculate and Return Mean (Avg)
+                var arrMean = (arrSum / arr.length);
+                $("#meanResult").text(arrMean);
+
+                // Calculate and Return Min
+                var arrMin = Math.min(...arr);
+                $("#minResult").text(arrMin);
+
+                // Calculate and Return Max
+                var arrMax = Math.max(...arr);
+                $("#maxResult").text(arrMax);
+            });
+
+            function MathSum(array) {
+                var total = 0;
+                for (var i = 0; i < array.length; i++) {
+                    total += array[i];
+                }
+                return total;
+            }
+
+            function MathProd(array) {
+                var product = 1;
+                for (var i = 0; i < array.length; i++) {
+                    product *= array[i];
+                }
+                return product;
+            }
+            $("#btnMathCode").click(function () {
+                $("#syntaxMathResult").toggle();
+                var text = $(this).text();
+                if (text == "SHOW CODE") {
+                    $(this).text("HIDE CODE");
+                } else {
+                    $(this).text("SHOW CODE");
+                }
+            });
+
+
+            // Calculate Factorial
+            $("#btnFact").click(function () {
+                // Step 1: Get the data
+                var factNum = Number($("#factNum").val());
+                // Step 2: Do Calculation
+                var result = Factorial(factNum);
+                // Step 3: Output the Result
+                $("#factResult").text(result);
+            });
+
+            function Factorial(nbr) {
+                // For Loop
+                for (var i = nbr - 1; i > 1; i--) {
+                    nbr *= i;
+                }
+                return nbr;
+            }
+
+            $("#btnFactCode").click(function () {
+                $("#syntaxFactResult").toggle();
+                var text = $(this).text();
+                if (text == "SHOW CODE") {
+                    $(this).text("HIDE CODE");
+                } else {
+                    $(this).text("SHOW CODE");
+                }
+            });
+
+            /*
+                    // Fizz-Buzz
+                    * My Original Fizz-Buzz *
+                    $("#btnFB").click(function () {
+                        // Get the data
+                        var fizz = Number($("#fizzNum").val());
+                        var buzz = Number($("#buzzNum").val());
+                        var fbStr = "";
+
+                        // For-Loop to determine divisibility
+                        for (var i = 1; i < 101; i++) {
+                            if ((i % fizz === 0) && (i % buzz === 0)) {
+                                fbStr += "Fizz-Buzz, ";
+                            } else if (i % fizz === 0) {
+                                fbStr += "Fizz, ";
+                            } else if (i % buzz === 0) {
+                                fbStr += "Buzz, ";
+                            } else {
+                                fbStr += i + ", ";
+                            }
+                        }
+
+                        // Output Result
+                        $("#fbResult").text(fbStr);
+                    });
+            */
+            // Fizz-Buzz
+            $("#btnFB").click(function () {
+                // Get the data
+                var fizz = Number($("#fizzNum").val());
+                var buzz = Number($("#buzzNum").val());
+                // Call the "FizzBuzz" function and return in a string variable
+                var fbStr = FizzBuzz(fizz, buzz);
+                $("#fbResult").html(fbStr);
+            });
+
+            function FizzBuzz(nbr1, nbr2) {
+                var output = [];
+                for (var i = 1; i <= 100; i++) {
+                    var fizz = (i % nbr1 == 0);  // returns a 'true' or 'false'
+                    var buzz = (i % nbr2 == 0);
+                    if (fizz && buzz) output.push("<span class='fizz-buzz'>FIZZ-BUZZ</span>");
+                    else if (fizz) output.push("<span class='fizz'>FIZZ</span>");
+                    else if (buzz) output.push("<span class='buzz'>BUZZ</span>");
+                    else output.push("<span class='iNumber'>" + i + "</span>");
+                }
+                return output.join(", ");
+            }
+
+            $("#btnFBCode").click(function () {
+                $("#syntaxFBResult").toggle();
+                var text = $(this).text();
+                if (text == "SHOW CODE") {
+                    $(this).text("HIDE CODE");
+                } else {
+                    $(this).text("SHOW CODE");
+                }
+            });
+
+            // Palindrome
+            $("#btnPalindrome").click(function () {
+                // Get the data
+                var word = $("#word").val();
+                word = word.toUpperCase();
+                var result = word + " is a Palindrome";
+                var j = word.length - 1;
+                for (var i = 0; i < j; i++) {
+                    if (word[i] !== word[j]) {
+                        result = word + " is NOT a Palindrome";
+                        break;
+                    }
+                    j -= 1;
+                }
+                $("#palindromeResult").text(result);
+            });
+
+
+            //// Palindrome from class
+            //$("#btnPalindrome").click(function () {
+            //    // Step 1:  Get the user input
+            //    var input = $("#txtWord").val();
+
+            //    // Step 2:  Run it through the ReverseAString method
+            //    var output = ReverseAString1(input);
+
+            //    // Step 3:  Compare it to the original and write the appropriate output
+            //    if (input == output) {
+            //        $("#palindromeResult").text("The word " + input + " reversed is " + output);
+            //    }
+            //});
+
+
+            $(".newModal").click(function () {
+                $("#allModal").modal("hide");
+                ALLMODAL = true;
+            });
+
+            $(".closeModal").click(function () {
+                $('.formInput').val("");
+                $("p.formInput").text("");
+                if (ALLMODAL) {
+                    $("#allModal").modal("show");
+                }
+            });
+
+            $('#math').on('hidden', function () {
+                clear()
+            });
+
+
+
+            function ReverseAString1(word) {
+                // "test" --> "tset"
+                word.substring(0, 2) // test => te  Starts at position 0 and stops before position 2
+                // if you omit the 2nd parameter, it doesn't stop - finishes out the word
+
+                word.substr(0, 2)  // test => te  Starts at position 0 and brings back 2 characters.
+                var output = "";
+                // Loop through the input in reverse order
+                for (var index = word.length - 1; index >= 0; index--) {
+                    output += word.substr(index, 1);
+                }
+                return output;
+            }
+
+            function ReverseAString3(word) {
+                var output = "";
+                for (var index = word.length - 1; index >= 0; index--) {
+                    var character = word[index];
+                    output += character;
+                }
+                return output;
+            }
+
+            function ReverseAString4(word) {
+                return word.split("").reverse().join("");     // One-Liner
+            }
+
+        });
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+﻿
+@{
+    ViewBag.Title = "GridDemo";
+}
+
+<style>
+    .flex-container {
+        display: flex;
+        height: 400px;
+        width: 800px;
+    }
+
+    .flex-container > div {
+        font-size: 20px;
+    }
+
+    .cell-1 {
+        display: flex;
+        border: 1px solid dodgerblue;
+        background-color: #f1f1f1;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    .cell-2 {
+        display: flex;
+        border: 1px solid dodgerblue;
+        background-color: #f1f1f1;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+
+    .cell-3 {
+        display: flex;
+        border: 1px solid dodgerblue;
+        background-color: #f1f1f1;
+        justify-content: center;
+        align-items: center;
+        height: 133px;
+    }
+</style>
+
+<h2>Bootstrap Grid System (Column-Based)</h2>
+<div class="container-fluid">
+    <div class="col-md-4 h2">
+        <div class="row">
+            <div class="col-md-4">4</div>
+            <div class="col-md-4">4</div>
+            <div class="col-md-4">4</div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">6</div>
+            <div class="col-md-6">6</div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">12</div>
+        </div>
+        <hr />
+    </div>
+    <div class="col-md-4 h3">
+        <div class="row">
+            <div class="col-md-3">3</div>
+            <div class="col-md-3">3</div>
+            <div class="col-md-3">3</div>
+            <div class="col-md-3">3</div>
+        </div>
+        <hr />
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-8">8</div>
+            <div class="col-md-4">4</div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">6</div>
+            <div class="col-md-3">3</div>
+            <div class="col-md-3">3</div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-2">2</div>
+            <div class="col-md-3">3</div>
+            <div class="col-md-2">2</div>
+            <div class="col-md-3">3</div>
+            <div class="col-md-2">2</div>
+        </div>
+        <hr />
+        <div class="row">
+            @for (var loop = 0; loop < 12; loop++)
+            {
+                <div class="col-md-1">1</div>
+            }
+        </div>
+        <hr />
+    </div>
+</div>
+
+<hr />
+
+<h2>Bootstrap Grid System (Row-Based)</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">1</div>
+        <div class="col-md-9">2</div>
+    </div>
+    <div class="row h2">
+        <div class="col-md-12">H2</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">3</div>
+        <div class="col-md-2">4</div>
+        <div class="col-md-2">5</div>
+        <div class="col-md-2">6</div>
+        <div class="col-md-2">7</div>
+        <div class="col-md-2">8</div>
+    </div>
+    <div class="row h3">
+        <div class="col-md-12">H3</div>
+    </div>
+    <div class="row">
+        @for (var loop = 9; loop <= 20; loop++)
+        {
+            <div class="col-md-1 table-bordered text-danger">@loop</div>
+        }
+    </div>
+    <div class="row h4">
+        <div class="col-md-3">H4</div>
+        <div class="col-md-3">H4</div>
+        <div class="col-md-6">H4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">21</div>
+        <div class="col-md-3">22</div>
+        <div class="col-md-6">23</div>
+    </div>
+</div>
+
+<hr />
+
+<h2>Bootstrap Grid System (Block-elements)</h2>
+<div class="flex-container text-center">
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-6 cell-1">C1R1C1</div>
+            <div class="col-md-6 cell-1">C1R1C2</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 cell-1">C1R2C1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 cell-1">C1R3C1</div>
+            <div class="col-md-6 cell-1">C1R3C2</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 cell-1">C1R4C1</div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-12 cell-2">C2R1C1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 cell-2">C2R2C1</div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-12 cell-3">C3R1C1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 cell-3">C3R2C1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 cell-3">C3R3C1</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

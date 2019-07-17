@@ -1,0 +1,592 @@
+﻿
+@{
+    ViewBag.Title = "JSBasics";
+}
+
+<style>
+    button.wideButton {
+        width: 100%;
+        height: 50px;
+    }
+
+    button.close {
+        color: white;
+        opacity: 0.8;
+    }
+
+    .desc {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .color-info .active a {
+        background-color: #31B0D5!important;
+        color: white!important;
+    }
+
+    hr {
+        height: 5px;
+        background-color: blanchedalmond;
+        border: 2px solid gray;
+    }
+
+    .nbrInput {
+        width: 160px;
+    }
+
+    .newModal {
+        width: 180px;
+        height: 80px;
+        font-weight: bold;
+    }
+
+    
+    .mathModalHdr {
+        background-color: #31B0D5;
+        color: white;
+    }
+
+    .factModalHdr {
+        background-color: #EC971F;
+        color: white;
+    }
+
+    .fbModalHdr {
+        background-color: #286090;
+        color: white;
+    }
+
+    .palModalHdr {
+        background-color: #449D44;
+        color: white;
+    }
+
+    .allModalHdr {
+        background-color: red;
+        color: white;
+    }
+
+    span.fizz-buzz {
+        color: purple;
+        font-size: x-large;
+    }
+
+    span.fizz {
+        color: blue;
+        font-size: larger;
+    }
+
+    span.buzz {
+        color: red;
+        font-size: larger;
+    }
+
+    span.iNumber {
+        color: black;
+        font-weight: bold;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+
+</style>
+
+<h2>JSBasics</h2>
+@*This Action will eventually have to be moved in one way or the other into our template once the template has been worked in.*@
+
+<div class="row text-center h3">
+    Demo view for triggering various Modals
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <button type="button" class="btn btn-info wideButton" data-toggle="modal" data-target="#math">Math</button>
+    </div>
+    <div class="col-md-3">
+        <button type="button" class="btn btn-warning wideButton" data-toggle="modal" data-target="#factorial">Factorial</button>
+    </div>
+    <div class="col-md-3">
+        <button type="button" class="btn btn-primary wideButton" data-toggle="modal" data-target="#fizzbuzz">Fizz-Buzz</button>
+    </div>
+    <div class="col-md-3">
+        <button type="button" class="btn btn-success wideButton" data-toggle="modal" data-target="#palindrome">Palindrome</button>
+    </div>
+</div>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-offset-4 col-md-4">
+        <button type="button" class="btn btn-lg btn-danger wideButton" data-toggle="modal" data-target="#allModal">All Exercises</button>
+    </div>
+</div>
+
+@*Modals go here*@
+
+<!-- Modal -->
+<div id="math" class="modal fade" data-focus-on="input:first" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content modal-lg">
+            <div class="modal-header mathModalHdr">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">MATH MODAL</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 text-center h4">
+
+                        <p>Enter 5 Numbers:</p>
+                        <input id="nbr1" class="nbrInput formInput" type="number" name="nbr1" value="" />
+                        <input id="nbr2" class="nbrInput formInput" type="number" name="nbr2" value="" />
+                        <input id="nbr3" class="nbrInput formInput" type="number" name="nbr3" value="" />
+                        <input id="nbr4" class="nbrInput formInput" type="number" name="nbr4" value="" />
+                        <input id="nbr5" class="nbrInput formInput" type="number" name="nbr5" value="" />
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button type="button" class="btn btn-info h4" id="btnMath">CALCULATE</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center h4">
+                        <ul class="nav nav-pills nav-justified color-info">
+                            <li class="active"><a data-toggle="pill" href="#sum">SUM</a></li>
+                            <li><a data-toggle="pill" href="#product">PRODUCT</a></li>
+                            <li><a data-toggle="pill" href="#mean">MEAN</a></li>
+                            <li><a data-toggle="pill" href="#max">MAX</a></li>
+                            <li><a data-toggle="pill" href="#min">MIN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tab-content">
+
+                            <div id="sum" class="tab-pane fade in active">
+                                <div class="row">
+                                    <div class="col-md-2"><p id="sumResult" class="h4 text-center formInput"></p></div>
+                                    <div class="col-md-9"></div>
+                                </div>
+                            </div>
+                            <div id="product" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-2"><p id="prodResult" class="h4 text-center formInput"></p></div>
+
+                                </div>
+                            </div>
+                            <div id="mean" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-md-5"></div>
+                                    <div class="col-md-2"><p id="meanResult" class="h4 text-center formInput"></p></div>
+
+                                </div>
+                            </div>
+
+                            <div id="max" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-md-7"></div>
+                                    <div class="col-md-2"><p id="maxResult" class="h4 text-center formInput"></p></div>
+
+                                </div>
+                            </div>
+
+                            <div id="min" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-md-9"></div>
+                                    <div class="col-md-2"><p id="minResult" class="h4 text-center formInput"></p></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info closeModal" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="factorial" class="modal fade" z-index="2" data-focus-on="input:first" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header factModalHdr">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">FACTORIAL MODAL</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 text-center h4">
+                        <p>Enter the Factorial Number:</p>
+                        <input id="factNum" type="number" name="nbr1" class="formInput" value="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button type="button" class="btn btn-warning h4" id="btnFact">CALCULATE</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="factResult" class="h4 text-center formInput"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning closeModal" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="fizzbuzz" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header fbModalHdr">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">FIZZ-BUZZ MODAL</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 text-center h4">
+                        <p>Enter the Fizz Number:</p>
+                        <input id="fizzNum" type="number" name="fizz" class="formInput" value="" />
+                    </div>
+                    <div class="col-md-6 text-center h4">
+                        <p>Enter the Buzz Number:</p>
+                        <input id="buzzNum" type="number" name="buzz" class="formInput" value="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button type="button" id="btnFB" class="btn btn-primary h4">SHOW THE FIZZ-BUZZ</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="fbResult" class="h4 formInput"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary closeModal" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="palindrome" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header palModalHdr">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">PALINDROME MODAL</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 text-center h4">
+                        <p>Enter a Word:</p>
+                        <input id="word" type="text" name="word" class="formInput" value="" />
+                    </div>
+                    <div class="col-md-6 text-center h4">
+                        <br />
+                        <button type="button" id="btnPalindrome" class="btn btn-success">IS IT A PALINDROME?</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center h4">
+                        <p id="palindromeResult" class="h4 formInput"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success closeModal" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="allModal" class="modal fade" z-index="1" data-focus-on="input:first">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content modal-lg">
+            <div class="modal-header allModalHdr">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">JAVASCRIPT BASIC EXERCISES</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-3 h4">
+                        <button class="btn btn-info btn-lg newModal" data-toggle="modal" href="#math">MATH</button>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="desc text-info">
+                            Enter 5 numbers, and find (1) Sum, (2) Product, and statistics: <br />(3) Mean, (4) Max, and (5) Min
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 h4">
+                        <button class="btn btn-warning btn-lg newModal" data-toggle="modal" href="#factorial">FACTORIAL</button>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="desc text-warning">
+                            Enter number n, and find n!  n * (n-1) * (n-2) * (n-3) ... * 1<br />For example, 5! = 5 * 4 * 3 * 2 * 1
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 h4">
+                        <button class="btn btn-primary btn-lg newModal" data-toggle="modal" href="#fizzbuzz">FIZZBUZZ</button>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="desc text-primary">
+                            Enter two numbers a & b between 1 and 100.  Then print out all numbers 1-100, except (1) When evenly divisible by a, 
+                            print "<span class="fizz">Fizz</span>" (2) When evenly divisible by b, print "<span class="buzz">Buzz</span>" (3) When evenly divisible by both a & b, print "<span class="fizz-buzz">FizzBuzz</span>"
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 h4">
+                        <button class="btn btn-success btn-lg newModal" data-toggle="modal" href="#palindrome">PALINDROME</button>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="desc text-success">
+                            Enter a word or phrase.  When ignoring spaces and special characters, the word/phrase is a Palindrome if it is the 
+                            same when reversed.
+                        </div>
+                    </div>
+                </div>
+
+             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+@section scripts {
+   
+    <script>
+        // at section scripts tells the Layout page to strip the scripts out of here and put them in RenderSection("scripts", required: false)
+        // Set Global variable
+        var ALLMODAL = false;
+
+        // Calculate Sum, Product, Mean, Min, and Max of 5 numbers
+        $("#btnMath").click(function () {
+            // Create Array
+            var arr = [Number($("#nbr1").val()), Number($("#nbr2").val()), Number($("#nbr3").val()), Number($("#nbr4").val()), Number($("#nbr5").val())];
+
+            // Call Functions for Sum and Product
+            var arrSum = MathSum(arr);
+            var arrProd = MathProd(arr);
+
+            // Return Sum and Prod Results
+            $("#sumResult").text(arrSum);
+            $("#prodResult").text(arrProd);
+
+            // Calculate and Return Mean (Avg)
+            var arrMean = (arrSum / arr.length);
+            $("#meanResult").text(arrMean);
+
+            // Calculate and Return Min
+            var arrMin = Math.min(...arr);
+            $("#minResult").text(arrMin);
+
+            // Calculate and Return Max
+            var arrMax = Math.max(...arr);
+            $("#maxResult").text(arrMax);
+        });
+
+        function MathSum(array) {
+            var total = 0;
+            for (var i = 0; i < array.length; i++) {
+                total += array[i];
+            }
+            return total;
+        }
+
+        function MathProd(array) {
+            var product = 1;
+            for (var i = 0; i < array.length; i++) {
+                product *= array[i];
+            }
+            return product;
+        }
+
+        // Calculate Factorial
+        $("#btnFact").click(function () {
+            // Step 1: Get the data
+            var factNum = Number($("#factNum").val());
+            // Step 2: Do Calculation
+            var result = Factorial(factNum);
+            // Step 3: Output the Result
+            $("#factResult").text(result);
+        });
+
+        function Factorial(nbr) {
+            // For Loop
+            for (var i = nbr-1; i > 1; i--) {
+                nbr *= i;                
+            }
+            return nbr;
+        }
+
+/*
+        // Fizz-Buzz
+     * My Original Fizz-Buzz *
+        $("#btnFB").click(function () {
+            // Get the data
+            var fizz = Number($("#fizzNum").val());
+            var buzz = Number($("#buzzNum").val());
+            var fbStr = "";
+
+            // For-Loop to determine divisibility
+            for (var i = 1; i < 101; i++) {
+                if ((i % fizz === 0) && (i % buzz === 0)) {
+                    fbStr += "Fizz-Buzz, ";
+                } else if (i % fizz === 0) {
+                    fbStr += "Fizz, ";
+                } else if (i % buzz === 0) {
+                    fbStr += "Buzz, ";
+                } else {
+                    fbStr += i + ", ";
+                }
+            }
+
+            // Output Result
+            $("#fbResult").text(fbStr);
+        });
+*/
+        // Fizz-Buzz
+        $("#btnFB").click(function () {
+            // Get the data
+            var fizz = Number($("#fizzNum").val());
+            var buzz = Number($("#buzzNum").val());
+            // Call the "FizzBuzz" function and return in a string variable
+            var fbStr = FizzBuzz(fizz, buzz);
+            $("#fbResult").html(fbStr);
+        });
+
+        function FizzBuzz(nbr1, nbr2) {
+            var output = [];
+            for (var i = 1; i <= 100; i++) {
+                var fizz = (i % nbr1 == 0)  // returns a 'true' or 'false'
+                var buzz = (i % nbr2 == 0)
+                if (fizz && buzz) output.push("<span class='fizz-buzz'>FIZZ-BUZZ</span>")
+                else if (fizz) output.push("<span class='fizz'>FIZZ</span>")
+                else if (buzz) output.push("<span class='buzz'>BUZZ</span>")
+                else output.push("<span class='iNumber'>" + i + "</span>")
+            }
+            return output.join(", ");
+        }
+
+        // Palindrome
+        $("#btnPalindrome").click(function () {
+            // Get the data
+            var word = $("#word").val();
+            var newWord = word.str.replace( /[^a-z]/g, '' );
+            newWord = NewWord.toLowerCase();
+            var result = word + " is a Palindrome";
+            var j = newWord.length - 1;
+            for (var i = 0; i < j; i++) {
+                if (newWord[i] !== newWord[j]) {
+                    result = word + " is NOT a Palindrome";
+                    break;
+                }
+                j -= 1;
+            }
+            $("#palindromeResult").text(result);
+        });
+
+
+        //// Palindrome from class
+        //$("#btnPalindrome").click(function () {
+        //    // Step 1:  Get the user input
+        //    var input = $("#txtWord").val();
+
+        //    // Step 2:  Run it through the ReverseAString method
+        //    var output = ReverseAString1(input);
+
+        //    // Step 3:  Compare it to the original and write the appropriate output
+        //    if (input == output) {
+        //        $("#palindromeResult").text("The word " + input + " reversed is " + output);
+        //    }
+        //});
+
+
+        $(".newModal").click(function () {
+            $("#allModal").modal("hide");
+            ALLMODAL = true;
+        });
+
+        $(".closeModal").click(function () {
+            $('.formInput').val("");
+            $("p.formInput").text("");
+            if (ALLMODAL) {
+                $("#allModal").modal("show");
+            }
+        });
+
+        $('#math').on('hidden', function() {
+            clear()
+        });
+
+
+
+        function ReverseAString1(word) {
+            // "test" --> "tset"
+            word.substring(0, 2) // test => te  Starts at position 0 and stops before position 2
+            // if you omit the 2nd parameter, it doesn't stop - finishes out the word
+
+            word.substr(0, 2)  // test => te  Starts at position 0 and brings back 2 characters. 
+            var output = "";
+            // Loop through the input in reverse order
+            for (var index = word.length - 1; index >= 0; index--) {
+                output += word.substr(index, 1);
+            }
+            return output;
+        }
+
+        function ReverseAString3(word) {
+            var output = "";
+            for (var index = word.length - 1; index >= 0; index--) {
+                var character = word[index];
+                output += character;
+            }
+            return output;
+        }
+
+        function ReverseAString4(word) {
+            return word.split("").reverse().join("");     // One-Liner
+        }
+
+        
+
+
+    </script> 
+}
+
