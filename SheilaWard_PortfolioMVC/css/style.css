@@ -19,6 +19,9 @@ a,a:hover,a:focus {
 .section-home {
     position:relative;
 }
+.section {
+    height: 100vh;
+}
 .banner {
     position:absolute;
     top:0px;
@@ -289,10 +292,10 @@ h2.section-subheading.about {
     text-transform:uppercase;
 }
 .section-skill {
-    min-height:755px;
-    background:#efeded url("../img/about-bg.jpg") no-repeat fixed center;
-    background-size:cover;
-    padding-top:80px;
+    height: 100vh;
+    background: #efeded url("../img/about-bg.jpg") no-repeat fixed center;
+    background-size: cover;
+    padding-top: 80px;
 }
 .section-subheading-nobg {
     margin-top:25px;
@@ -583,8 +586,9 @@ p.tar {
     background-color:#f1f1f1;
 }
 .section-education {
-    padding-top:80px;
-    padding-bottom:40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    height: 100vh;
 }
 .education {
     min-height:120px;
@@ -757,11 +761,20 @@ p.tar {
 /** section works end**/
 /**section portfolio start**/
 .section-portfolio {
-    padding-top:80px;
-    padding-bottom:80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 100vh;
 }
 .section-portfolio .section-title {
     margin-bottom:50px;
+}
+.section-coding-challenges {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 100vh;
+}
+.section-coding-challenges .section-title {
+    margin-bottom: 50px;
 }
 .tags {
     margin-bottom:30px;
@@ -800,9 +813,10 @@ p.tar {
 /**section portfolio end**/
 /** section testimonial **/
 .section-testimonial {
-    padding-top:80px;
-    padding-bottom:80px;
-    background-color:#f1f1f1;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f1f1f1;
+    height: 100vh;
 }
 .testimonial-thumb {
     width:215px;
@@ -2052,3 +2066,12 @@ filter: gray; /* IE6-9 */
     margin-top: 0px;
     font-size: 14px;
 }
+
+.downloader,
+.downloader:hover,
+.downloader:focus,
+.downloader:visited
+{
+    color: white;
+}
+

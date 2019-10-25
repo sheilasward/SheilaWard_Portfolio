@@ -45,7 +45,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GoogleMapsApi, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GoogleMapsApi.0.78.0\lib\net40\GoogleMapsApi.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -99,9 +105,6 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -119,6 +122,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ExercisesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -126,6 +130,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\EmailModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -159,7 +164,6 @@
     <Content Include="css\themes\orange-theme.css" />
     <Content Include="css\themes\purple-theme.css" />
     <Content Include="css\themes\turquoise-theme.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -267,6 +271,16 @@
     <Content Include="img\p1.jpg" />
     <Content Include="img\person.jpg" />
     <Content Include="img\plus.png" />
+    <Content Include="img\portfolio\BugTracker.jpg" />
+    <Content Include="img\portfolio\ChalkboardBlog.jpg" />
+    <Content Include="img\portfolio\clicky.JPG" />
+    <Content Include="img\portfolio\CrystalsCollector.JPG" />
+    <Content Include="img\portfolio\EatDaBurger.JPG" />
+    <Content Include="img\portfolio\Factorial.JPG" />
+    <Content Include="img\portfolio\Factorial.png" />
+    <Content Include="img\portfolio\FizzBuzz.JPG" />
+    <Content Include="img\portfolio\FizzBuzz.png" />
+    <Content Include="img\portfolio\Giphy.jpg" />
     <Content Include="img\portfolio\image1.jpg" />
     <Content Include="img\portfolio\image10.jpg" />
     <Content Include="img\portfolio\image11.jpg" />
@@ -284,6 +298,12 @@
     <Content Include="img\portfolio\image8.jpg" />
     <Content Include="img\portfolio\image9.jpg" />
     <Content Include="img\portfolio\JSBasics.JPG" />
+    <Content Include="img\portfolio\MathAndStatistics.JPG" />
+    <Content Include="img\portfolio\MathAndStatistics.png" />
+    <Content Include="img\portfolio\MongoScraper2.JPG" />
+    <Content Include="img\portfolio\Palindrome.JPG" />
+    <Content Include="img\portfolio\Palindrome.png" />
+    <Content Include="img\portfolio\portal.JPG" />
     <Content Include="img\portfolio\tiles\bgtile.jpg" />
     <Content Include="img\portfolio\tiles\blog.png" />
     <Content Include="img\portfolio\tiles\buy.png" />
@@ -362,6 +382,7 @@
     <Content Include="js\waypoints-sticky.js" />
     <Content Include="js\waypoints.js" />
     <Content Include="js\wow.js" />
+    <Content Include="favicon.ico" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="img\.DS_Store" />
@@ -377,7 +398,9 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="img\web-developer-resume.pdf" />
+    <Content Include="Private.config" />
     <None Include="Properties\PublishProfiles\SheilaWardPortfolio - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\sheilawardportfolio - Web Deploy1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -443,16 +466,16 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\GridDemo.cshtml" />
-    <Content Include="Views\Home\Add2Nums.cshtml" />
-    <Content Include="Views\Home\JavaScriptDemo.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Exercises\JSBasics.cshtml" />
     <Content Include="Views\Exercises\Tester.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Add2Nums.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\JavaScriptDemo.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

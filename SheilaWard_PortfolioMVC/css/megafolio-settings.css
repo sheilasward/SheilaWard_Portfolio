@@ -15,16 +15,16 @@ website:   	http://www.themepunch.com
 /****************************
 	-	FANCY BOX TRICKS -
 *****************************/
-.fancybox-lock .fancybox-overlay {
+/*.fancybox-lock .fancybox-overlay {
     overflow-x: auto;
     overflow-y: hidden !important;
-}
+}*/
 
 /************************************************
 	-	BASIC CAPTIONS AND COVERS PER mega-entry	-
 ************************************************/
 
-.mega-covercaption					{	padding:21px 20px;
+/*.mega-covercaption					{	padding:21px 20px;
 										box-sizing:border-box;
 										-moz-box-sizing:border-box;
 										-webkit-box-sizing:border-box;
@@ -48,11 +48,11 @@ website:   	http://www.themepunch.com
 .mega-green 						{   background:#9ab534; }
 .mega-red 							{   background:#d74f35; }
 .mega-violet 						{   background:#791869; }
-.mega-blue 							{   background:#034e92; }
+.mega-blue 							{   background:#034e92; }*/
 
 
 /*** THE DIRECTIONS OF CAPTIONS **/
-.mega-square .mega-square-top						{	top:0px; left:0px; bottom:auto;}
+/*.mega-square .mega-square-top						{	top:0px; left:0px; bottom:auto;}
 .mega-square .mega-square-bottom					{	bottom:0px;	left:0px;top:auto;}
 .mega-square .mega-square-left						{	top:0px; left:0px; max-width:50%; height:100%	}
 .mega-square .mega-square-right					 	{	top:0px; right:0px; left:auto; width:50%; height:100%	}
@@ -65,14 +65,14 @@ website:   	http://www.themepunch.com
 .mega-landscape .mega-landscape-top					{	top:0px; left:0px; bottom:auto;}
 .mega-landscape .mega-landscape-bottom				{	bottom:0px;	left:0px;top:auto;}
 .mega-landscape .mega-landscape-left				{	top:0px; left:0px; width:50%; height:100%	}
-.mega-landscape .mega-landscape-right				{	top:0px; right:0px; left:auto; width:50%; height:100%	}
+.mega-landscape .mega-landscape-right				{	top:0px; right:0px; left:auto; width:50%; height:100%	}*/
 
 
 
 
 
 
-.mega-title							{	 text-align: left; font-family: 'Open Sans', sans-serif;  font-size:24px; line-height: 24px; color:#fff; font-weight:400; }
+/*.mega-title							{	 text-align: left; font-family: 'Open Sans', sans-serif;  font-size:24px; line-height: 24px; color:#fff; font-weight:400; }
 .mega-date							{	 text-align: left; font-family: 'Open Sans', sans-serif;  font-size:15px; color:#666; font-weight:300; margin-top: 0px;}
 .mega-covercaption p				{	 text-align: left; font-family: 'Open Sans', sans-serif;  font-size:13px; color:#555; font-weight:400; margin-top:12px; }
 .mega-covercaption a 				{	 color: #fff; text-decoration: none; border-bottom: 1px dotted #fff; }
@@ -85,10 +85,10 @@ website:   	http://www.themepunch.com
 									}
 .mega-smallcaptions .mega-date		{
 									font-size:12px; font-weight:400; text-transform: uppercase; color:#888;
-									}
+									}*/
 
 
-.mega-white .mega-title				{	color:#000;}
+/*.mega-white .mega-title				{	color:#000;}
 .mega-white .mega-date				{	color:#666;}
 .mega-white p						{	color:#555;}
 .mega-white.mega-covercaption a 		{	 color: #555; text-decoration: none; border-bottom: 1px dotted #555; }
@@ -120,10 +120,10 @@ website:   	http://www.themepunch.com
 
 .mega-blue .mega-title,
 .mega-blue .mega-date,
-.mega-blue p {	color:#fff;}
+.mega-blue p {	color:#fff;}*/
 
 
-.fatcaption-top
+/*.fatcaption-top
 										{ position: absolute; top: 0; width: 100%; text-align:center; padding: 15px 0px; font-size:14px; line-height:20px; font-weight: 700; color:#fff; margin-top:0px; background:rgb(0,0,0); background: rgba(0,0,0,0.8);
 										}
 	.fatcaption-bottom
@@ -133,22 +133,22 @@ website:   	http://www.themepunch.com
 										{ position: absolute; bottom: 0; width: 100%; text-align:center; padding: 15px 0px; font-size:17px; line-height:20px; font-weight: 700; color:#fff; margin-top:0px; background:rgb(0,0,0);  background: rgba(0,0,0,0.8);
 										}
 	.gallerysubline                  			{ width: 100%; text-align:center; font-size:13px; line-height:20px; font-weight: 400; color:#ccc; margin-top:2px;
-										}
+										}*/
 
 
 /** SET THE CAPTION SETTIGS UNDER LOWSIZE ENTRIES  **/
 
-.mega-lowsize .mega-covercaption p		{	display:none;}
+/*.mega-lowsize .mega-covercaption p		{	display:none;}
 
 .mega-lowsize .mega-title			{	font-size:18px;}
 
-.mega-lowsize .mega-date			{	font-size:13px;}
+.mega-lowsize .mega-date			{	font-size:13px;}*/
 
 
 /********************************
 	-	CAPTION NORMAL LINKS
 *********************************/
-.mega-coverbuttons		{	  max-width:68px;max-height:34px;position:absolute;
+/*.mega-coverbuttons		{	  max-width:68px;max-height:34px;position:absolute;
 							  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 							  filter: alpha(opacity=0);
 							  -moz-opacity: 0.0;
@@ -165,10 +165,10 @@ website:   	http://www.themepunch.com
 													  -moz-opacity: 1;
 													  -khtml-opacity: 1;
 													  opacity: 1;
-												}
+												}*/
 
 
-.mega-link				{	background-image:url(../img/link_clean.png); background-repeat: no-repeat; background-position: center center; width:34px;height:34px;float:left;
+/*.mega-link				{	background-image:url(../img/link_clean.png); background-repeat: no-repeat; background-position: center center; width:34px;height:34px;float:left;
 							  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 							  filter: alpha(opacity=50);
 							  -moz-opacity: 0.5;
@@ -192,17 +192,17 @@ website:   	http://www.themepunch.com
 							  -moz-opacity: 1;
 							  -khtml-opacity: 1;
 							  opacity: 1;
-						}
+						}*/
 
 /*********************************************
 	-	SOCIAL BAR AT THE BOTTOM PER mega-entry	-
 ***********************************************/
 
-.mega-square .mega-square-bottom.mega-withsocialbar,
+/*.mega-square .mega-square-bottom.mega-withsocialbar,
 .mega-portrait .mega-portrait-bottom.mega-withsocialbar,
-.mega-landscape .mega-landscape-bottom.mega-withsocialbar					{	padding-bottom:25px;}
+.mega-landscape .mega-landscape-bottom.mega-withsocialbar					{	padding-bottom:25px;}*/
 
-.mega-socialbar						{	position:absolute;
+/*.mega-socialbar						{	position:absolute;
 
 										height:16px;
 										z-index:10;
@@ -221,10 +221,10 @@ website:   	http://www.themepunch.com
 										-webkit-border-radius:0;
 										padding:2px 10px;
 										overflow:hidden;
-									}
+									}*/
 
 
-.mega-socialbar span				{	 text-align:left; font-family: 'Open Sans', sans-serif;  font-size:11px; color:#777; font-weight:400;line-height:16px; text-shadow:0px 1px 0px #fff;}
+/*.mega-socialbar span				{	 text-align:left; font-family: 'Open Sans', sans-serif;  font-size:11px; color:#777; font-weight:400;line-height:16px; text-shadow:0px 1px 0px #fff;}
 
 .mega-soc							{	cursor:pointer; background-position:left 2px !important; min-width:16px;height:18px; margin-top:-2px;}
 .mega-soc:hover						{	background-position:left -14px !important; }
@@ -240,7 +240,7 @@ website:   	http://www.themepunch.com
 .mega-rightfloat					{	float:right;}
 
 .ie8 .mega-socialbar .mega-rightfloat,
-.ie9 .mega-socialbar .mega-rightfloat	{	margin-right:25px;}
+.ie9 .mega-socialbar .mega-rightfloat	{	margin-right:25px;}*/
 
 
 
@@ -253,14 +253,14 @@ website:   	http://www.themepunch.com
 ******************************************************/
 
 
-	.mega-entry .mega-entry-innerwrap			{	border:0px solid #fff; }
+	/*.mega-entry .mega-entry-innerwrap			{	border:0px solid #fff; }
 	.noborder .mega-entry .mega-entry-innerwrap	{	border:0px solid #fff;}
-	.noborder .mega-entry .mega-entry-innerwrap	{	border:0px solid #fff;}
+	.noborder .mega-entry .mega-entry-innerwrap	{	border:0px solid #fff;}*/
 
-	.light-bg-entries .mega-entry .mega-entry-innerwrap	{	background-color:#ccc !important;}
-	.dark-bg-entries .mega-entry .mega-entry-innerwrap	{	background-color:rgb(0,0,0) !important; background-color:rgba(0,0,0,0.3) !important;}
+	/*.light-bg-entries .mega-entry .mega-entry-innerwrap	{	background-color:#ccc !important;}
+	.dark-bg-entries .mega-entry .mega-entry-innerwrap	{	background-color:rgb(0,0,0) !important; background-color:rgba(0,0,0,0.3) !important;}*/
 
-
+    /*  This changes the gallery  */
 	.mega-entry								{
 
 											-moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-sizing: border-box;
@@ -279,7 +279,7 @@ website:   	http://www.themepunch.com
 
 
 
-
+    /*  Without this, the gallery doesn't show up!  */
 	.mega-entry .mega-entry-innerwrap				{	width:100%;height:100%;position:relative;overflow:visible;z-index:2;
 											-moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-sizing: border-box;
 											border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;
@@ -294,51 +294,51 @@ website:   	http://www.themepunch.com
 
 										}
 
-	.ie8 .mega-entry,
+	/*.ie8 .mega-entry,
 	.ie8 .mega-entry .mega-entry-innerwrap,
 	.ie9 .mega-entry,
-	.ie9 .mega-entry .mega-entry-innerwrap	{	overflow:hidden;}
+	.ie9 .mega-entry .mega-entry-innerwrap	{	overflow:hidden;}*/
 
-	.mega-entry-innerwrap.pagetop			{	-webkit-transform-origin: 50% 0% 0;
+	/*.mega-entry-innerwrap.pagetop			{	-webkit-transform-origin: 50% 0% 0;
 											-moz-transform-origin: 50% 0% 0;
 											transform-origin: 50% 0% 0;
-										}
+										}*/
 
-	.mega-entry-innerwrap.pagebottom			{	-webkit-transform-origin: 50% 100% 0;
+	/*.mega-entry-innerwrap.pagebottom			{	-webkit-transform-origin: 50% 100% 0;
 											-moz-transform-origin: 50% 100% 0;
 											transform-origin: 50% 100% 0;
-										}
+										}*/
 
-	.mega-entry-innerwrap.pagemiddle			{	-webkit-transform-origin: 50% 50% 0;
+	/*.mega-entry-innerwrap.pagemiddle			{	-webkit-transform-origin: 50% 50% 0;
 											-moz-transform-origin: 50% 50% 0;
 											transform-origin: 50% 50% 0;
-										}
+										}*/
 
-	.megafolio-container.norounded .mega-entry .mega-entry-innerwrap {
+	/*.megafolio-container.norounded .mega-entry .mega-entry-innerwrap {
 										border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;
-										}
-	.megafolio-container-splash.norounded .mega-entry .mega-entry-innerwrap {
+										}*/
+	/*.megafolio-container-splash.norounded .mega-entry .mega-entry-innerwrap {
 										border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;
-										}
+										}*/
 
 
 
 
-	.mega-lightbox, .oldmegalightbox	{	position:absolute;  overflow:hidden;box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.6);border:1px solid #333;
-											z-index:1000; padding:100px;  background: url(../img/grain.png) repeat; background-color:rgba(20,20,20,0.9); margin-left:-100px; margin-top:-100px;}
+	/*.mega-lightbox, .oldmegalightbox	{	position:absolute;  overflow:hidden;box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.6);border:1px solid #333;
+											z-index:1000; padding:100px;  background: url(../img/grain.png) repeat; background-color:rgba(20,20,20,0.9); margin-left:-100px; margin-top:-100px;}*/
 
-	.mega-lightbox .mediaholder,
-	.oldmegalightbox .mediaholder		{	border:2px solid #fff; position: relative; width:100%; height:100%;box-shadow: 0px 0px 3px 1px rgba(40,40,40,0.6);}
+	/*.mega-lightbox .mediaholder,
+	.oldmegalightbox .mediaholder		{	border:2px solid #fff; position: relative; width:100%; height:100%;box-shadow: 0px 0px 3px 1px rgba(40,40,40,0.6);}*/
 
 
 
 	/** IE HACKS **/
 
-	.ieimg	{	position:absolute; width:100%; top:0px; left:0px;z-index:0;}
+	/*.ieimg	{	position:absolute; width:100%; top:0px; left:0px;z-index:0;}*/
 
-	.mega-mega-entry-added					{	visibility: hidden; }
+	/*.mega-mega-entry-added					{	visibility: hidden; }
 	.mega-mega-entry-added .mega-socialbar,
-	.mega-mega-entry-added .mega-covercaption	{	visibility: hidden}
+	.mega-mega-entry-added .mega-covercaption	{	visibility: hidden}*/
 
 
 
@@ -364,12 +364,12 @@ website:   	http://www.themepunch.com
 											opacity: 0;
 										}
 
-	.norounded .mega-hover				{	border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
+	/*.norounded .mega-hover				{	border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}*/
 
 
-	.mega-divider						{
+	/*.mega-divider						{
 												position:absolute;top:50%; width:80%; left:10%; border-bottom:1px dashed #7b7c7e;border-top:1px dashed #111;
-											}
+											}*/
 
 
 	.mega-hovertitle,

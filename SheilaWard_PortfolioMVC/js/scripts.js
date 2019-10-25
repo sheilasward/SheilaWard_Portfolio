@@ -316,14 +316,9 @@
 
                             tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
                         }
-
                     });
                 });
         });
-
-
-
-
     });
 
 
@@ -333,7 +328,7 @@
 /*==Google MAP==*/
 function initialize() {
     var image = '../img/map-marker.png';
-    var myLatlng = new google.maps.LatLng(41.850033, -87.6500523);
+    var myLatlng = new google.maps.LatLng(35.956790, -79.793610);
     var mapOptions = {
         zoom: 15,
         scrollwheel: false,
@@ -349,12 +344,10 @@ function initialize() {
     var contentString = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<h3 id="firstHeading" class="firstHeading">CHRIS NISWANDEE</h3>' +
+        '<h3 id="firstHeading" class="firstHeading">Sheila Ward</h3>' +
         '<div id="bodyContent">' +
-        '<p>SMALLSYS INC ' +
-        '799 E DRAGRAM SUITE 5A ' +
-        '<a href="#">www.themebucket.net </a>' +
-        'TUCSON AZ 85705, USA. </p>' +
+        '5703 Davis Mill Rd ' +
+        'Greensboro, NC 27406, USA. </p>' +
         '</div>' +
         '</div>';
 

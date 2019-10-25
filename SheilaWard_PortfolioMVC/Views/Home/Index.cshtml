@@ -1,4 +1,4 @@
-﻿@{
+﻿@{ 
     Layout = null;
 }
 
@@ -7,7 +7,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Sheila's Portfolio</title>
     <link href="~/css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="~/css/royal_preloader.css" type="text/css" rel="stylesheet">
     <link href="~/css/animate.css" type="text/css" rel="stylesheet">
@@ -31,10 +31,14 @@
 
     <link href="~/Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
     <link href="~/Scripts/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- Google Map Api -->
+    <script async defer src="//maps.googleapis.com/maps/api/js?key=@System.Configuration.ConfigurationManager.AppSettings["apiKey"]&callback=initMap" type="text/javascript"></script>
+
     <style>
         button.close {
             color: white;
@@ -47,9 +51,9 @@
             color: white;
         }
 
-        .btn-danger:hover {
-            background-color: #ED5550;
-        }
+            .btn-danger:hover {
+                background-color: #ED5550;
+            }
 
         .btn-info,
         .btn-info:focus {
@@ -57,10 +61,10 @@
             color: white;
         }
 
-        .btn-info:hover {
-            background-color: #31B0D5;
-            color: white;
-        }
+            .btn-info:hover {
+                background-color: #31B0D5;
+                color: white;
+            }
 
         .text-info {
             color: #31B0D5;
@@ -72,10 +76,10 @@
             color: white;
         }
 
-        .btn-warning:hover {
-            background-color: #EC971F;
-            color: white;
-        }
+            .btn-warning:hover {
+                background-color: #EC971F;
+                color: white;
+            }
 
         .text-warning {
             color: #EC971F;
@@ -87,10 +91,10 @@
             color: white;
         }
 
-        .btn-primary:hover {
-            background-color: #286090;
-            color: white;
-        }
+            .btn-primary:hover {
+                background-color: #286090;
+                color: white;
+            }
 
         .text-primary {
             color: #286090;
@@ -102,10 +106,10 @@
             color: white;
         }
 
-        .btn-success:hover {
-            background-color: #449D44;
-            color: white;
-        }
+            .btn-success:hover {
+                background-color: #449D44;
+                color: white;
+            }
 
         .text-success {
             color: #449D44;
@@ -118,7 +122,7 @@
             line-height: 150%;
         }
 
-         hr {
+        hr {
             height: 5px;
             background-color: blanchedalmond;
             border: 2px solid gray;
@@ -189,9 +193,9 @@
                 <!-- SLIDE  -->
                 <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                     <!-- MAIN IMAGE -->
-                    <img src="~/img/banner1.png" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <img src="/img/banner1.png" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                     <div class="tp-caption lft" data-x="center" data-hoffset="0" data-y="50" data-voffset="0" data-speed="800" data-start="700" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
-                        <img src="~/img/myResume.png" alt="slidebg1">
+                        <img src="/img/myResume.png" alt="slidebg1">
                     </div>
                     <div class="tp-caption main-title lfl" data-x="center" data-hoffset="0" data-y="250" data-speed="500" data-start="1500" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
                         Sheila Ward
@@ -206,9 +210,9 @@
                 <!-- SLIDE  -->
                 <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                     <!-- MAIN IMAGE -->
-                    <img src="~/img/banner2.png" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <img src="/img/banner2.png" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                     <div class="tp-caption lft" data-x="center" data-hoffset="0" data-y="0" data-voffset="0" data-speed="800" data-start="700" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
-                        <img src="~/img/mouse-clipart.png" alt="slideimg">
+                        <img src="/img/mouse-clipart.png" alt="slideimg">
                     </div>
                     <div class="tp-caption main-title lfl" data-x="center" data-hoffset="0" data-y="250" data-speed="500" data-start="1500" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
                         2 years experience
@@ -223,9 +227,9 @@
                 <!-- SLIDE  -->
                 <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                     <!-- MAIN IMAGE -->
-                    <img src="~/img/banner3c.png" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <img src="/img/banner3c.png" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                     <div class="tp-caption lft" data-x="center" data-hoffset="0" data-y="50" data-voffset="0" data-speed="800" data-start="700" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
-                        <img src="~/img/myExperience.png" alt="slideimg">
+                        <img src="/img/myExperience.png" alt="slideimg">
                     </div>
                     <div class="tp-caption main-title lfl" data-x="center" data-hoffset="0" data-y="250" data-speed="500" data-start="1500" data-easing="Power4.easeOut" data-endspeed="1000" data-endeasing="Power1.easeIn">
                         Additional Qualifications
@@ -259,9 +263,7 @@
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="fa fa-bars"></span>
                                 </button>
-                                <a class="sticky-logo" href="index.html">
-                                    <img src="~/img/sticky-logo.png" alt="" />
-                                </a>
+                                <img src="/img/sticky-logo.png" alt="" />
                             </div>
                             <div class="navbar-collapse collapse ddsmoothmenu" id="smoothmenu1">
                                 <ul class="nav navbar-nav pull-right top-nav sf-menu">
@@ -271,16 +273,10 @@
                                     <li><a href="#experiences">Experiences</a></li>
                                     <li><a href="#education">Education</a></li>
                                     <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#coding-challenges">Coding Challenges</a></li>
                                     <li><a href="#testimonial">References</a></li>
                                     <li><a href="#connect">Connect</a></li>
-                                    @*<li>
-                                            <a href="#blog">Blog</a>
-                                            <ul>
-                                                <li><a href="#blog">Blog List</a></li>
-                                                <li><a href="blog_listing.html" class="external">Blog Page</a></li>
-                                                <li><a href="blog_details.html" class="external">Blog Details Page</a></li>
-                                            </ul>
-                                        </li>*@
+
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
@@ -298,7 +294,7 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="about-img wow fadeInUpBig">
-                                <img src="~/img/p1.jpg" alt="">
+                                <img src="/img/p1.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -324,10 +320,11 @@
                                 </div>
                                 <div class="custombtn wow bounceIn" data-wow-duration="1s" data-wow-delay=".2s">
                                     <div class="icons">
-                                        <a href="~/img/web-developer-resume.pdf" download="sheila-ward-resume.pdf"><i class="fa fa-download"></i></a>
+                                        <a href="/img/web-developer-resume.pdf" download="sheila-ward-resume.pdf"><i class="fa fa-download"></i></a>
                                     </div>
                                     <div class="text">
-                                        Download Resume
+                                        <a href="/img/web-developer-resume.pdf" download="sheila-ward-resume.pdf" class="downloader">Download Resume</a>
+                                        @*Download Resume*@
                                     </div>
                                 </div>
                             </div>
@@ -704,43 +701,65 @@
                     <div class="col-md-12">
                         <section>
                             <!-- THE FILTER STYLED FOR MEGAFOLIO -->
-                            <div class="tags filter-nav">
+                            <div class="tags filter-nav text-center">
                                 <ul>
                                     <li class="filter selected" data-category="cat-all">ALL</li>
                                     <li class="filter" data-category="cat-uiux">UI/UX</li>
-                                    <li class="filter" data-category="cat-two">NODE.JS</li>
-                                    <li class="filter" data-category="cat-two">ASP.NET</li>
-                                    <li class="filter" data-category="cat-three">DATABASE</li>
-                                    <li class="filter" data-category="cat-three">HANDLEBARS</li>
-                                    <li class="filter last-child" data-category="cat-four">REACT</li>
+                                    <li class="filter" data-category="cat-node">NODE.JS</li>
+                                    <li class="filter" data-category="cat-asp">ASP.NET</li>
+                                    <li class="filter" data-category="cat-database">DATABASE</li>
+                                    <li class="filter" data-category="cat-handlebars">HANDLEBARS</li>
+                                    <li class="filter last-child" data-category="cat-react">REACT</li>
                                 </ul>
                             </div>
                             <div class="clear">
                             </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <section>
                             <!-- The GRID System -->
                             <div class="megafolio-container light-bg-entries">
                                 <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-uiux cat-all" data-src="../img/portfolio/JSBasics.jpg" data-width="577" data-height="500">
+                                <div class="mega-entry cat-uiux cat-asp cat-database cat-all" data-src="../img/portfolio/ChalkboardBlog.jpg" data-width="500" data-height="375">
                                     <div class="mega-hover alone">
                                         <div class="mega-hovertitle">
-                                            Javascript Basics
+                                            Blog
                                             <div class="mega-hoversubtitle">
-                                                UX/UI
+                                                UI/UX ASP.NET DATABASE
                                             </div>
                                         </div>
-                                        <a href="#" data-toggle="modal" data-target="#portfolioModal">
+                                        <a href="https://sheilawardblog.azurewebsites.net/" target="_blank">
                                             <div class="mega-hoverview">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-one cat-all" data-src="../img/portfolio/image2.jpg" data-width="667" data-height="500">
+                                <div class="mega-entry cat-uiux cat-asp cat-database cat-all" data-src="../img/portfolio/BugTracker.jpg" data-width="667" data-height="500">
                                     <div class="mega-hover alone">
                                         <div class="mega-hovertitle">
-                                            Portfolio Title
+                                            Bug Tracker
                                             <div class="mega-hoversubtitle">
-                                                Category
+                                                UI/UX ASP.NET DATABASE
+                                            </div>
+                                        </div>
+                                        <a href="https://sheilawardbugtracker.azurewebsites.net/" target="_blank">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-uiux cat-asp cat-database cat-all" data-src="../img/portfolio/portal.jpg" data-width="625" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Financial Portal
+                                            <div class="mega-hoversubtitle">
+                                                UI/UX ASP.NET DATABASE
                                             </div>
                                         </div>
                                         <a href="#" data-toggle="modal" data-target="">
@@ -750,146 +769,42 @@
                                     </div>
                                 </div>
                                 <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-three cat-all" data-src="../img/portfolio/image3.jpg" data-width="625" data-height="500">
+                                <div class="mega-entry cat-uiux cat-database cat-node cat-handlebars cat-all" data-src="../img/portfolio/EatDaBurger.jpg" data-width="500" data-height="500">
                                     <div class="mega-hover alone">
                                         <div class="mega-hovertitle">
-                                            Portfolio Title
+                                            Eat-Da-Burger
                                             <div class="mega-hoversubtitle">
-                                                Category
+                                                UI/UX NODE.JS DATABASE HANDLEBARS
                                             </div>
                                         </div>
-                                        <a href="#" data-toggle="modal" data-target="">
+                                        <a href="https://shielded-river-30768.herokuapp.com/" target="_blank">
                                             <div class="mega-hoverview">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-four cat-all" data-src="../img/portfolio/image4.jpg" data-width="500" data-height="500">
+                                <div class="mega-entry cat-uiux cat-database cat-node cat-react cat-all" data-src="../img/portfolio/clicky.jpg" data-width="551" data-height="500">
                                     <div class="mega-hover alone">
                                         <div class="mega-hovertitle">
-                                            Portfolio Title
+                                            Clicky Game
                                             <div class="mega-hoversubtitle">
-                                                Category
+                                                UI/UX NODE.JS REACT DATABASE
                                             </div>
                                         </div>
-                                        <a href="#" data-toggle="modal" data-target="">
+                                        <a href="https://stormy-hamlet-63684.herokuapp.com/" target="_blank">
                                             <div class="mega-hoverview">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-one cat-all" data-src="../img/portfolio/image5.jpg" data-width="551" data-height="500">
+                                <div class="mega-entry cat-uiux cat-database cat-node cat-handlebars cat-all" data-src="../img/portfolio/MongoScraper2.jpg" data-width="594" data-height="50">
                                     <div class="mega-hover alone">
                                         <div class="mega-hovertitle">
-                                            Portfolio Title
+                                            Mongo Scraper (KLOVE version)
                                             <div class="mega-hoversubtitle">
-                                                Category
-                                            </div>
-                                        </div>
-                                        <a href="#" data-toggle="modal" data-target="">
-                                            <div class="mega-hoverview">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-two cat-all" data-src="../img/portfolio/image6.jpg" data-width="594" data-height="50">
-                                    <div class="mega-hover alone">
-                                        <div class="mega-hovertitle">
-                                            Portfolio Title
-                                            <div class="mega-hoversubtitle">
-                                                Category
-                                            </div>
-                                        </div>
-                                        <a href="#" data-toggle="modal" data-target="">
-                                            <div class="mega-hoverview">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-three cat-all" data-src="../img/portfolio/image7.jpg" data-width="512" data-height="500">
-                                    <div class="mega-hover alone">
-                                        <div class="mega-hovertitle">
-                                            Portfolio Title
-                                            <div class="mega-hoversubtitle">
-                                                Category
-                                            </div>
-                                        </div>
-                                        <a href="#" data-toggle="modal" data-target="">
-                                            <div class="mega-hoverview">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-four cat-all" data-src="../img/portfolio/image8.jpg" data-width="612" data-height="500">
-                                    <div class="mega-hover alone">
-                                        <div class="mega-hovertitle">
-                                            Portfolio Title
-                                            <div class="mega-hoversubtitle">
-                                                Category
-                                            </div>
-                                        </div>
-                                        <a href="#" data-toggle="modal" data-target="">
-                                            <div class="mega-hoverview">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-two cat-all" data-src="../img/portfolio/image9.jpg" data-width="615" data-height="500">
-                                    <div class="mega-hover alone">
-                                        <div class="mega-hovertitle">
-                                            Portfolio Title
-                                            <div class="mega-hoversubtitle">
-                                                Category
-                                            </div>
-                                        </div>
-                                        <a href="#" data-toggle="modal" data-target="">
-                                            <div class="mega-hoverview">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="mega-entry cat-three cat-all" data-src="../img/portfolio/image1.jpg" data-width="577" data-height="500">
-                                    <div class="mega-hover alone">
-                                        <div class="mega-hovertitle">
-                                            Portfolio Title
-                                            <div class="mega-hoversubtitle">
-                                                Category
-                                            </div>
-                                        </div>
-                                        <a href="#" data-toggle="modal" data-target="">
-                                            <div class="mega-hoverview">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-four cat-all" data-src="../img/portfolio/image2.jpg" data-width="667" data-height="500">
-                                    <div class="mega-hover alone">
-                                        <div class="mega-hovertitle">
-                                            Portfolio Title
-                                            <div class="mega-hoversubtitle">
-                                                Category
-                                            </div>
-                                        </div>
-                                        <a href="#" data-toggle="modal" data-target="">
-                                            <div class="mega-hoverview">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- A GALLERY ENTRY -->
-                                <div class="mega-entry cat-one cat-all" data-src="../img/portfolio/image3.jpg" data-width="625" data-height="500">
-                                    <div class="mega-hover alone">
-                                        <div class="mega-hovertitle">
-                                            Portfolio Title
-                                            <div class="mega-hoversubtitle">
-                                                Category
+                                                UI/UX NODE.JS DATABASE HANDLEBARS
                                             </div>
                                         </div>
                                         <a href="#" data-toggle="modal" data-target="">
@@ -906,6 +821,141 @@
         </div>
     </section>
     <!--section portfolio end-->
+    <!--section coding challenges start-->
+    <section>
+        <div class="section-coding-challenges" id="coding-challenges">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1 class="section-heading">CODING CHALLENGES</h1>
+                            <h2 class="section-subheading-nobg">Javascript Exercises</h2>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="row">
+                    <div class="col-md-12">
+                        <section>
+                             THE FILTER STYLED FOR MEGAFOLIO 
+                            <div class="tags filter-nav text-center">
+                                <ul>
+                                    <li class="filter selected" data-category="cat-all">ALL</li>
+                                    <li class="filter" data-category="cat-uiux">UI/UX</li>
+                                    <li class="filter" data-category="cat-node">NODE.JS</li>
+                                    <li class="filter" data-category="cat-asp">ASP.NET</li>
+                                    <li class="filter" data-category="cat-ajax">AJAX</li>
+                                </ul>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </section>
+                    </div>
+                </div>*@
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <section>
+                            <!-- The GRID System -->
+                            <div class="megafolio-container light-bg-entries">
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-uiux cat-asp cat-all" data-src="../img/portfolio/FizzBuzz.png" data-width="625" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Fizz-Buzz
+                                            <div class="mega-hoversubtitle">
+                                                UI/UX ASP.NET
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="#fizzbuzz">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-uiux cat-asp cat-all" data-src="../img/portfolio/Palindrome.png" data-width="625" data-height="500">
+
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Palindrome
+                                            <div class="mega-hoversubtitle">
+                                                UI/UX ASP.NET
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="#palindrome">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-uiux cat-asp cat-all" data-src="../img/portfolio/Factorial.png">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Factorial
+                                            <div class="mega-hoversubtitle">
+                                                UI/UX ASP.NET
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="#factorial">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-uiux cat-asp cat-all" data-src="../img/portfolio/MathAndStatistics.png" data-width="500" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Math &amp; Statistics
+                                            <div class="mega-hoversubtitle">
+                                                UI/UX ASP.NET
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="#math">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-uiux cat-node cat-all" data-src="../img/portfolio/CrystalsCollector.jpg" data-width="551" data-height="500">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Crystals Collector
+                                            <div class="mega-hoversubtitle">
+                                                UI/UX NODE.JS
+                                            </div>
+                                        </div>
+                                        <a href="https://sheilasward.github.io/unit-4-game/" target="_blank">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- A GALLERY ENTRY -->
+                                <div class="mega-entry cat-uiux cat-node cat-ajax cat-all" data-src="../img/portfolio/Giphy.jpg" data-width="594" data-height="50">
+                                    <div class="mega-hover alone">
+                                        <div class="mega-hovertitle">
+                                            Giphy API
+                                            <div class="mega-hoversubtitle">
+                                                UI/UX NODE.JS AJAX
+                                            </div>
+                                        </div>
+                                        <a href="https://sheilasward.github.io/GiphyAPI/" target="_blank">
+                                            <div class="mega-hoverview">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section coding challenges end-->
     <!--section testimonial start-->
     <section>
         <div class="section-testimonial" id="testimonial">
@@ -924,9 +974,9 @@
                             <div>
                                 <div class="testimonial-thumb">
                                     <div class="img-frame wow bounceInDown">
-                                        <img src="~/img/quote_photoframe.png" alt="" />
-                                        <img class="icon" src="~/img/quote_circle.png" alt="" />
-                                        <img class="person" src="~/img/DaveRose.jpg" alt="" />
+                                        <img src="/img/quote_photoframe.png" alt="" />
+                                        <img class="icon" src="/img/quote_circle.png" alt="" />
+                                        <img class="person" src="/img/DaveRose.jpg" alt="" />
                                     </div>
                                     <div class="details">
                                         <h2>Dave Rose</h2>
@@ -946,9 +996,9 @@
                             <div>
                                 <div class="testimonial-thumb">
                                     <div class="img-frame wow bounceInDown">
-                                        <img src="~/img/quote_photoframe.png" alt="" />
-                                        <img class="icon" src="~/img/quote_circle.png" alt="" />
-                                        <img class="person" src="~/img/RebeccaHalsey.jpg" alt="" />
+                                        <img src="/img/quote_photoframe.png" alt="" />
+                                        <img class="icon" src="/img/quote_circle.png" alt="" />
+                                        <img class="person" src="/img/RebeccaHalsey.jpg" alt="" />
                                     </div>
                                     <div class="details">
                                         <h2>Rebecca Halsey</h2>
@@ -966,9 +1016,9 @@
                             <div>
                                 <div class="testimonial-thumb">
                                     <div class="img-frame wow bounceInDown">
-                                        <img src="~/img/quote_photoframe.png" alt="" />
-                                        <img class="icon" src="~/img/quote_circle.png" alt="" />
-                                        <img class="person" src="~/img/Cindy.jpg" alt="" />
+                                        <img src="/img/quote_photoframe.png" alt="" />
+                                        <img class="icon" src="/img/quote_circle.png" alt="" />
+                                        <img class="person" src="/img/Cindy.jpg" alt="" />
                                     </div>
                                     <div class="details">
                                         <h2>Cynthia Triplett</h2>
@@ -977,9 +1027,9 @@
                                 </div>
                                 <div class="quote">
                                     <p>
-                                        Sheila is a pleasure to work with, a team player, and readily assists colleagues as needed.   She is organized, 
-                                        successful in finding creative solutions to problems, her results are thoroughly tested, and quality deliverables 
-                                        are completed on schedule.  Sheila worked with several development teams during her tenure with Lincoln Financial, 
+                                        Sheila is a pleasure to work with, a team player, and readily assists colleagues as needed.   She is organized,
+                                        successful in finding creative solutions to problems, her results are thoroughly tested, and quality deliverables
+                                        are completed on schedule.  Sheila worked with several development teams during her tenure with Lincoln Financial,
                                         and continued to learn new technology and develop IT skill sets to support the areas.
                                     </p>
                                 </div>
@@ -987,9 +1037,9 @@
                             <div>
                                 <div class="testimonial-thumb">
                                     <div class="img-frame wow bounceInDown">
-                                        <img src="~/img/quote_photoframe.png" alt="" />
-                                        <img class="icon" src="~/img/quote_circle.png" alt="" />
-                                        <img class="person" src="~/img/client3.jpg" alt="" />
+                                        <img src="/img/quote_photoframe.png" alt="" />
+                                        <img class="icon" src="/img/quote_circle.png" alt="" />
+                                        <img class="person" src="/img/client3.jpg" alt="" />
                                     </div>
                                     <div class="details">
                                         <h2>Adam Franklin</h2>
@@ -1024,14 +1074,14 @@
                             </div>
                             <div class="drag-arrow">
                             </div>
-                            @*<a href="https://www.facebook.com/" class="social-link social-link-drag sprite-facebook wow bounceIn "></a>*@
+
                             <a href="https://www.linkedin.com/in/sheilastanalandward/" class="social-link social-link-drag sprite-linkedin wow bounceIn " data-wow-delay=".8s"></a>
-                            @*<a href="https://dribbble.com/" class="social-link social-link-drag sprite-dribbble wow bounceIn " data-wow-delay="1.2s"></a>*@
-                            @*<a href="https://www.flickr.com/" class="social-link social-link-drag sprite-flickr wow bounceIn " data-wow-delay="1.6s"></a>*@
-                            @*<a href="https://instagram.com/" class="social-link social-link-drag sprite-instagram wow bounceIn" data-wow-delay=".4s"></a>*@
+
+
+
                             <a href="https://www.youtube.com/user/sheilastanaland" class="social-link social-link-drag sprite-youtube wow bounceIn"></a>
                             <a href="https://twitter.com/SheilaStanaland" class="social-link social-link-drag sprite-twitter wow bounceIn" data-wow-delay=".8s"></a>
-                            @*<a href="https://www.pinterest.com/" class="social-link social-link-drag sprite-printerest wow bounceIn" data-wow-delay="1.2s"></a>*@
+
                             <a href="https://github.com/sheilasward" class="social-link social-link-drag sprite-github wow bounceIn" data-wow-delay="1.6s"></a>
                         </div>
                     </div>
@@ -1054,43 +1104,43 @@
                     <div class="form-container">
                         <h3>Drop me a line</h3>
 
-                        <form class="contact-comments" action="sendmail.php" method="post">
-
+                        <!-- The "name" parameter on the input has to match the EmailModel class -->
+                        @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            <h5>All Fields Required</h5>
                             <div class="row">
-
                                 <div class="col-md-12 form-group">
                                     <!-- Name -->
-                                    <input type="text" name="name" id="name" class=" form-control" placeholder="Name *"
+                                    <input type="text" name="FromName" id="name" class=" form-control" placeholder="Name"
                                            maxlength="100" required="">
                                 </div>
 
                                 <div class="col-md-12 form-group">
                                     <!-- Email -->
-                                    <input type="email" name="email" id="email" class=" form-control" placeholder="Email *"
+                                    <input type="email" name="FromEmail" id="email" class=" form-control" placeholder="Email"
                                            maxlength="100" required="">
                                 </div>
 
                                 <div class="col-md-12 form-group">
                                     <!-- Subject -->
-                                    <input type="text" name="subject" id="subject" class=" form-control" placeholder="Subject "
-                                           maxlength="100">
+                                    <input type="text" name="Subject" id="subject" class=" form-control" placeholder="Subject "
+                                           maxlength="100" required="">
                                 </div>
 
                                 <div class="col-md-12 form-group">
                                     <!-- Comment -->
-                                    <textarea name="comments" id="comments" class=" form-control" placeholder="Comments"
-                                              maxlength="400"></textarea>
+                                    <textarea name="Body" id="comments" class=" form-control" placeholder="Comments"
+                                              maxlength="400" required=""></textarea>
                                 </div>
 
                                 <div class="col-md-12 form-group text-center">
-                                    <button type="submit" class="btn btn-read ">
+                                    <button type="submit" class="btn btn-share ">
                                         Send Message
                                     </button>
                                 </div>
-
                             </div>
-
-                        </form>
+                        }
 
                     </div>
                 </div>
@@ -1103,55 +1153,57 @@
         </div>
         <!--section contact end-->
     </section>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="wow slideInLeft">
-                            <p>
-                                5703 Davis Mill Road <br />
-                                Greensboro, North Carolina 27406
-                            </p>
-                        </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="wow slideInLeft">
+                        <p>
+                            5703 Davis Mill Road <br />
+                            Greensboro, North Carolina 27406
+                        </p>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="wow slideInDown text-center">
-                            <p style="font-family: 'Dancing Script', cursive; padding: 10px; color: #F96963; font-size: 32px;">Sheila Ward</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="wow slideInRight">
-                            <div class="f-address">
-                                <p>
-                                    <span>Email</span> : sheila.ward@email.com
-                                </p>
-                                <p>
-                                    <span>Phone</span> : (336) 327-4914
-                                </p>
-                                <p class="inlineBlock">
-                                    <span>Websites</span> : <a href="https://sheilasward.github.io/updatedPortfolio/" target="_blank">MERN Portfolio</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="col-md-4">
+                    <div class="wow slideInDown text-center">
+                        <p style="font-family: 'Dancing Script', cursive; padding: 10px; color: #F96963; font-size: 32px;">Sheila Ward</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="wow slideInRight">
+                        <div class="f-address">
+                            <p>
+                                <span>Email</span> : sheila.ward@email.com
+                            </p>
+                            <p>
+                                <span>Phone</span> : (336) 327-4914
+                            </p>
+                            <p class="inlineBlock">
+                                <span>Other Websites</span> : <a href="https://sheilasward.github.io/updatedPortfolio/" target="_blank">MERN Portfolio</a>
+                            </p>
+                            <p><span>&emsp;&emsp;&emsp;</span> : <a href="www.starla-and-jeff.com" target="_blank">Wedding Site</a></p>
+                            <p style="line-height:0px;"><span>&emsp;&emsp;&emsp;</span> : <a href="https://powerful-ravine-14193.herokuapp.com/" target="_blank">Yelp Camp</a></p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        &copy; 2014 resumi. All Rights Reserved. Designed & powered by <a href="#">ThemeBucket</a>
-                    </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; 2014 resumi. All Rights Reserved. Designed & powered by <a href="#">ThemeBucket</a> and modified by Sheila Ward.
                 </div>
             </div>
         </div>
     </div>
 
-    @*Modals go here*@
+
+
     <!-- Modal -->
     <div id="portfolioModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -1517,8 +1569,8 @@ function FizzBuzz(nbr1, nbr2) {
     <script src="~/js/royal_preloader.js"></script>
     <script type="text/javascript">
         var images = {
-            'Banner One': 'https://rxhtml.themebucket.net/img/banner1.jpg',
-            'Banner Two': 'https://rxhtml.themebucket.net/img/banner2.jpg',
+            'Banner One': '//rxhtml.themebucket.net/img/banner1.jpg',
+            'Banner Two': '//rxhtml.themebucket.net/img/banner2.jpg',
             'Banner Three': 'https://rxhtml.themebucket.net/img/banner3.jpg',
             'Theme Bucket': 'https://rxhtml.themebucket.net/img/p1.jpg',
             'About Me': 'https://rxhtml.themebucket.net/img/about-bg.jpg',
@@ -1562,8 +1614,6 @@ function FizzBuzz(nbr1, nbr2) {
     <script src="~/js/jquery.isotope.js"></script>
     <!-- Smooth Scroll Effect -->
     <script src="~/js/jquery.smooth-scroll.js"></script>
-    <!-- Google Map Api -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
     <!-- MEGAFOLIO GALLERY  JS FILES  -->
     <script src="~/js/jquery.megafolio.plugins.min.js"></script>
     <script src="~/js/jquery.themepunch.megafoliopro.js"></script>

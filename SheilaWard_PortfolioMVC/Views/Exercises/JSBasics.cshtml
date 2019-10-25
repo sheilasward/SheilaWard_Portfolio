@@ -22,8 +22,8 @@
     }
 
     .color-info .active a {
-        background-color: #31B0D5!important;
-        color: white!important;
+        background-color: #31B0D5 !important;
+        color: white !important;
     }
 
     hr {
@@ -42,7 +42,6 @@
         font-weight: bold;
     }
 
-    
     .mathModalHdr {
         background-color: #31B0D5;
         color: white;
@@ -88,7 +87,6 @@
         font-weight: bold;
         font-family: "Comic Sans MS", cursive, sans-serif;
     }
-
 </style>
 
 <h2>JSBasics</h2>
@@ -362,7 +360,7 @@
                     </div>
                     <div class="col-md-9">
                         <div class="desc text-primary">
-                            Enter two numbers a & b between 1 and 100.  Then print out all numbers 1-100, except (1) When evenly divisible by a, 
+                            Enter two numbers a & b between 1 and 100.  Then print out all numbers 1-100, except (1) When evenly divisible by a,
                             print "<span class="fizz">Fizz</span>" (2) When evenly divisible by b, print "<span class="buzz">Buzz</span>" (3) When evenly divisible by both a & b, print "<span class="fizz-buzz">FizzBuzz</span>"
                         </div>
                     </div>
@@ -373,13 +371,13 @@
                     </div>
                     <div class="col-md-9">
                         <div class="desc text-success">
-                            Enter a word or phrase.  When ignoring spaces and special characters, the word/phrase is a Palindrome if it is the 
+                            Enter a word or phrase.  When ignoring spaces and special characters, the word/phrase is a Palindrome if it is the
                             same when reversed.
                         </div>
                     </div>
                 </div>
 
-             </div>
+            </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
@@ -387,40 +385,33 @@
     </div>
 </div>
 
- 
+
 @section scripts {
-   
+
     <script>
         // at section scripts tells the Layout page to strip the scripts out of here and put them in RenderSection("scripts", required: false)
         // Set Global variable
         var ALLMODAL = false;
-
         // Calculate Sum, Product, Mean, Min, and Max of 5 numbers
         $("#btnMath").click(function () {
             // Create Array
             var arr = [Number($("#nbr1").val()), Number($("#nbr2").val()), Number($("#nbr3").val()), Number($("#nbr4").val()), Number($("#nbr5").val())];
-
             // Call Functions for Sum and Product
             var arrSum = MathSum(arr);
             var arrProd = MathProd(arr);
-
             // Return Sum and Prod Results
             $("#sumResult").text(arrSum);
             $("#prodResult").text(arrProd);
-
             // Calculate and Return Mean (Avg)
             var arrMean = (arrSum / arr.length);
             $("#meanResult").text(arrMean);
-
             // Calculate and Return Min
             var arrMin = Math.min(...arr);
             $("#minResult").text(arrMin);
-
             // Calculate and Return Max
             var arrMax = Math.max(...arr);
             $("#maxResult").text(arrMax);
         });
-
         function MathSum(array) {
             var total = 0;
             for (var i = 0; i < array.length; i++) {
@@ -428,7 +419,6 @@
             }
             return total;
         }
-
         function MathProd(array) {
             var product = 1;
             for (var i = 0; i < array.length; i++) {
@@ -436,7 +426,6 @@
             }
             return product;
         }
-
         // Calculate Factorial
         $("#btnFact").click(function () {
             // Step 1: Get the data
@@ -446,15 +435,13 @@
             // Step 3: Output the Result
             $("#factResult").text(result);
         });
-
         function Factorial(nbr) {
             // For Loop
             for (var i = nbr-1; i > 1; i--) {
-                nbr *= i;                
+                nbr *= i;
             }
             return nbr;
         }
-
 /*
         // Fizz-Buzz
      * My Original Fizz-Buzz *
@@ -463,7 +450,6 @@
             var fizz = Number($("#fizzNum").val());
             var buzz = Number($("#buzzNum").val());
             var fbStr = "";
-
             // For-Loop to determine divisibility
             for (var i = 1; i < 101; i++) {
                 if ((i % fizz === 0) && (i % buzz === 0)) {
@@ -476,7 +462,6 @@
                     fbStr += i + ", ";
                 }
             }
-
             // Output Result
             $("#fbResult").text(fbStr);
         });
@@ -490,7 +475,6 @@
             var fbStr = FizzBuzz(fizz, buzz);
             $("#fbResult").html(fbStr);
         });
-
         function FizzBuzz(nbr1, nbr2) {
             var output = [];
             for (var i = 1; i <= 100; i++) {
@@ -503,7 +487,6 @@
             }
             return output.join(", ");
         }
-
         // Palindrome
         $("#btnPalindrome").click(function () {
             // Get the data
@@ -521,28 +504,21 @@
             }
             $("#palindromeResult").text(result);
         });
-
-
         //// Palindrome from class
         //$("#btnPalindrome").click(function () {
         //    // Step 1:  Get the user input
         //    var input = $("#txtWord").val();
-
         //    // Step 2:  Run it through the ReverseAString method
         //    var output = ReverseAString1(input);
-
         //    // Step 3:  Compare it to the original and write the appropriate output
         //    if (input == output) {
         //        $("#palindromeResult").text("The word " + input + " reversed is " + output);
         //    }
         //});
-
-
         $(".newModal").click(function () {
             $("#allModal").modal("hide");
             ALLMODAL = true;
         });
-
         $(".closeModal").click(function () {
             $('.formInput').val("");
             $("p.formInput").text("");
@@ -550,19 +526,14 @@
                 $("#allModal").modal("show");
             }
         });
-
         $('#math').on('hidden', function() {
             clear()
         });
-
-
-
         function ReverseAString1(word) {
             // "test" --> "tset"
             word.substring(0, 2) // test => te  Starts at position 0 and stops before position 2
             // if you omit the 2nd parameter, it doesn't stop - finishes out the word
-
-            word.substr(0, 2)  // test => te  Starts at position 0 and brings back 2 characters. 
+            word.substr(0, 2)  // test => te  Starts at position 0 and brings back 2 characters.
             var output = "";
             // Loop through the input in reverse order
             for (var index = word.length - 1; index >= 0; index--) {
@@ -570,7 +541,6 @@
             }
             return output;
         }
-
         function ReverseAString3(word) {
             var output = "";
             for (var index = word.length - 1; index >= 0; index--) {
@@ -579,14 +549,10 @@
             }
             return output;
         }
-
         function ReverseAString4(word) {
             return word.split("").reverse().join("");     // One-Liner
         }
 
-        
-
-
-    </script> 
+    </script>
 }
 

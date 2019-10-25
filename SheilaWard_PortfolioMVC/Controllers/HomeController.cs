@@ -1,7 +1,12 @@
-﻿using System;
+﻿using SheilaWard_PortfolioMVC.ViewModels;
+using SheilaWard_PortfolioMVC.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
+using System.Threading.Tasks;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Mvc;
 
 namespace SheilaWard_PortfolioMVC.Controllers
@@ -22,8 +27,6 @@ namespace SheilaWard_PortfolioMVC.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
 
@@ -40,6 +43,22 @@ namespace SheilaWard_PortfolioMVC.Controllers
         public ActionResult JavaScriptDemo()
         {
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Contact(EmailModel email)
+        {
+            var from = $"{email.FromEmail}<{WebConfigurationManager.AppSettings["emailfrom"]}>";
+            var mailMsg = new MailMessage(from, WebConfigurationManager.AppSettings["emailto"])
+            {
+                Subject = email.Subject,
+                Body = email.Body,
+                IsBodyHtml = true
+            };
+            var svc = new PersonalEmail();
+            await svc.SendAsync(mailMsg);
+            return RedirectToAction("Index");
         }
     }
 }
