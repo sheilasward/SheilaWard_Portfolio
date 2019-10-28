@@ -253,6 +253,7 @@
     <Content Include="img\img1.jpg" />
     <Content Include="img\img2.jpg" />
     <Content Include="img\img3.jpg" />
+    <Content Include="img\Jason.jpg" />
     <Content Include="img\large_left.png" />
     <Content Include="img\large_right.png" />
     <Content Include="img\link.png" />
@@ -297,6 +298,7 @@
     <Content Include="img\portfolio\image7.jpg" />
     <Content Include="img\portfolio\image8.jpg" />
     <Content Include="img\portfolio\image9.jpg" />
+    <Content Include="img\portfolio\Jason.jpg" />
     <Content Include="img\portfolio\JSBasics.JPG" />
     <Content Include="img\portfolio\MathAndStatistics.JPG" />
     <Content Include="img\portfolio\MathAndStatistics.png" />

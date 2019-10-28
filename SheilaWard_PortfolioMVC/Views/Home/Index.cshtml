@@ -807,7 +807,7 @@
                                                 UI/UX NODE.JS DATABASE HANDLEBARS
                                             </div>
                                         </div>
-                                        <a href="#" data-toggle="modal" data-target="">
+                                        <a href="https://murmuring-stream-51944.herokuapp.com/" target="_blank">
                                             <div class="mega-hoverview">
                                             </div>
                                         </a>
@@ -1039,16 +1039,18 @@
                                     <div class="img-frame wow bounceInDown">
                                         <img src="/img/quote_photoframe.png" alt="" />
                                         <img class="icon" src="/img/quote_circle.png" alt="" />
-                                        <img class="person" src="/img/client3.jpg" alt="" />
+                                        <img class="person" src="/img/Jason.jpg" alt="" />
                                     </div>
                                     <div class="details">
-                                        <h2>Adam Franklin</h2>
-                                        <h3>CEO - THEMEBUCKET</h3>
+                                        <h2>Jason Twichell, Sr.</h2>
+                                        <h3>Full Stack .NET Instructor, IT Generalist and lifelong learner</h3>
                                     </div>
                                 </div>
                                 <div class="quote">
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                        Sheila has been a student of mine for nearly 6 months and has shown a high aptitude and strong work ethic from the first day.  
+                                        Sheila is not afraid to ask questions and is generous with her knowledge.  
+                                        I think Sheila will be an excellent addition to any established dev team.
                                     </p>
                                 </div>
                             </div>
@@ -1183,7 +1185,7 @@
                             <p class="inlineBlock">
                                 <span>Other Websites</span> : <a href="https://sheilasward.github.io/updatedPortfolio/" target="_blank">MERN Portfolio</a>
                             </p>
-                            <p><span>&emsp;&emsp;&emsp;</span> : <a href="www.starla-and-jeff.com" target="_blank">Wedding Site</a></p>
+                            <p><span>&emsp;&emsp;&emsp;</span> : <a href="http://www.starla-and-jeff.com" target="_blank">Wedding Site</a></p>
                             <p style="line-height:0px;"><span>&emsp;&emsp;&emsp;</span> : <a href="https://powerful-ravine-14193.herokuapp.com/" target="_blank">Yelp Camp</a></p>
                         </div>
                     </div>
@@ -1196,7 +1198,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    &copy; 2014 resumi. All Rights Reserved. Designed & powered by <a href="#">ThemeBucket</a> and modified by Sheila Ward.
+                    &copy; 2014 resumi. All Rights Reserved. Designed & powered by <a href="http://themebucket.net/" target="_blank">ThemeBucket</a> and modified by Sheila Ward.
                 </div>
             </div>
         </div>
@@ -1646,6 +1648,10 @@ function FizzBuzz(nbr1, nbr2) {
             $("#syntaxMathResult").hide();
             $("#syntaxFactResult").hide();
             $("#syntaxFBResult").hide();
+
+            $("input").focus(function() {
+                this.value = "";
+            });
 
             // Calculate Sum, Product, Mean, Min, and Max of 5 numbers
             $("#btnMath").click(function () {
